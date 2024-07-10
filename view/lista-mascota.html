@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pequeña Jungla</title>
+    <script src="https://kit.fontawesome.com/482ad17f17.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor__header contenedor">
+            <div class="header__info">
+                <a href="index.html" id="logo_enlace"><img src="img/LOGOJUNGLAV2.png" alt="logo de empresa"
+                        class="header__logo"></a>
+                <h2 class="header__titulo">software de gestion veterinaria</h2>
+            </div>
+            <div class="contenedor__us">
+                <i class="fa-solid fa-user"></i>
+                <p>Geovanni Vera</p>
+            </div>
+            <nav class="header__nav">
+                <a href="lista-servicios.html" class="header__enlace"><i class="fa-solid fa-shield-dog"></i> Servicio</a>
+                <a href="lista-mascota.html" class="header__enlace"><i class="fa-solid fa-dog"></i> Mascota</a>
+                <a href="listaCliente.html" class="header__enlace"><i class="fa-solid fa-person"></i> Cliente</a>
+                <a href="lista-empleado.html" class="header__enlace"><i class="fa-solid fa-user-nurse"></i> Empleado</a>
+                <a href="lista-usuario.html" class="header__enlace"><i class="fa-solid fa-user"></i> Usuario</a>
+                <a href="lista-inventario.html" class="header__enlace"><i class="fa-solid fa-bottle-water"></i> Inventario</a>
+                <a href="index.html" class="header__enlace"><i class="fa-solid fa-user-xmark"></i> cerrar sesion</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Contenido Index -->
+    <div class="pagina-lista">
+        <!-- Primera Columna -->
+        <div class=" contenedor__lista contenedor">
+            <h2>Mascota</h2>
+            <table class="lista">
+                <tr class="lista__fila">
+                    <th class="lista__encabezado">ID</th>
+                    <th class="lista__encabezado">Nombre</th>
+                    <th class="lista__encabezado">Tipo</th>
+                    <th class="lista__encabezado">Raza</th>
+                    <th class="lista__encabezado">sexo</th>
+                    <th class="lista__encabezado">color</th>
+                    <th class="lista__encabezado">edad</th>
+                    <th class="lista__encabezado">talla</th>
+                    <th class="lista__encabezado">peso</th>
+                    <th class="lista__encabezado" colspan="2">Operaciones</th>
+                </tr>
+                <tr class="lista__fila">
+                    <td class="lista__contenido">001</td>
+                    <td class="lista__contenido">Manchas</td>
+                    <td class="lista__contenido">cachorro</td>
+                    <td class="lista__contenido">Pastor aleman</td>
+                    <td class="lista__contenido">Macho</td>
+                    <td class="lista__contenido">cafe</td>
+                    <td class="lista__contenido">6 Años</td>
+                    <td class="lista__contenido">Grande</td>
+                    <td class="lista__contenido">10kg</td>
+                    <td class="lista__contenido"><i class="fa-solid fa-pencil pencil"></i></td>
+                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
+                </tr>
+                <tr class="lista__fila">
+                    <td class="lista__contenido">002</td>
+                    <td class="lista__contenido">Luna</td>
+                    <td class="lista__contenido">adulto</td>
+                    <td class="lista__contenido">Labrador</td>
+                    <td class="lista__contenido">Hembra</td>
+                    <td class="lista__contenido">negro</td>
+                    <td class="lista__contenido">5 Años</td>
+                    <td class="lista__contenido">Mediano</td>
+                    <td class="lista__contenido">25kg</td>
+                    <td class="lista__contenido"><i class="fa-solid fa-pencil pencil"></i></td>
+                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
+                </tr>
+                <tr class="lista__fila">
+                    <td class="lista__contenido">003</td>
+                    <td class="lista__contenido">Rocky</td>
+                    <td class="lista__contenido">cachorro</td>
+                    <td class="lista__contenido">Beagle</td>
+                    <td class="lista__contenido">Macho</td>
+                    <td class="lista__contenido">marrón</td>
+                    <td class="lista__contenido">1 Año</td>
+                    <td class="lista__contenido">Pequeño</td>
+                    <td class="lista__contenido">8kg</td>
+                    <td class="lista__contenido"><i class="fa-solid fa-pencil pencil"></i></td>
+                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
+                </tr>
+                <tr class="lista__fila">
+                    <td class="lista__contenido">004</td>
+                    <td class="lista__contenido">Bella</td>
+                    <td class="lista__contenido">adulto</td>
+                    <td class="lista__contenido">Golden Retriever</td>
+                    <td class="lista__contenido">Hembra</td>
+                    <td class="lista__contenido">dorado</td>
+                    <td class="lista__contenido">3 Años</td>
+                    <td class="lista__contenido">Grande</td>
+                    <td class="lista__contenido">30kg</td>
+                    <td class="lista__contenido"><i class="fa-solid fa-pencil pencil"></i></td>
+                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
+                </tr>
+                <tr class="lista__fila">
+                    <td class="lista__contenido">005</td>
+                    <td class="lista__contenido">Max</td>
+                    <td class="lista__contenido">cachorro</td>
+                    <td class="lista__contenido">Bulldog Francés</td>
+                    <td class="lista__contenido">Macho</td>
+                    <td class="lista__contenido">blanco</td>
+                    <td class="lista__contenido">2 Años</td>
+                    <td class="lista__contenido">Pequeño</td>
+                    <td class="lista__contenido">12kg</td>
+                    <td class="lista__contenido"><i class="fa-solid fa-pencil pencil"></i></td>
+                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
+                </tr>
+                <tr class="lista__fila">
+                    <td class="lista__contenido">006</td>
+                    <td class="lista__contenido">Simba</td>
+                    <td class="lista__contenido">adulto</td>
+                    <td class="lista__contenido">Husky</td>
+                    <td class="lista__contenido">Macho</td>
+                    <td class="lista__contenido">gris</td>
+                    <td class="lista__contenido">4 Años</td>
+                    <td class="lista__contenido">Grande</td>
+                    <td class="lista__contenido">28kg</td>
+                    <td class="lista__contenido"><i class="fa-solid fa-pencil pencil"></i></td>
+                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
+                </tr>
+                <tr class="lista__fila">
+                    <td class="lista__contenido">007</td>
+                    <td class="lista__contenido">Toby</td>
+                    <td class="lista__contenido">cachorro</td>
+                    <td class="lista__contenido">Chihuahua</td>
+                    <td class="lista__contenido">Macho</td>
+                    <td class="lista__contenido">crema</td>
+                    <td class="lista__contenido">1 Año</td>
+                    <td class="lista__contenido">Pequeño</td>
+                    <td class="lista__contenido">3kg</td>
+                    <td class="lista__contenido"><i class="fa-solid fa-pencil pencil"></i></td>
+                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
+                </tr>
+                <tr class="lista__fila">
+                    <td class="lista__contenido">008</td>
+                    <td class="lista__contenido">Nala</td>
+                    <td class="lista__contenido">adulto</td>
+                    <td class="lista__contenido">Boxer</td>
+                    <td class="lista__contenido">Macho</td>
+                    <td class="lista__contenido">atigrado</td>
+                    <td class="lista__contenido">6 Años</td>
+                    <td class="lista__contenido">Grande</td>
+                    <td class="lista__contenido">32kg</td>
+                    <td class="lista__contenido"><i class="fa-solid fa-pencil pencil"></i></td>
+                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
+                </tr>
+                <tr class="lista__fila">
+                    <td class="lista__contenido">009</td>
+                    <td class="lista__contenido">Rex</td>
+                    <td class="lista__contenido">cachorro</td>
+                    <td class="lista__contenido">Dálmata</td>
+                    <td class="lista__contenido">Macho</td>
+                    <td class="lista__contenido">blanco con manchas</td>
+                    <td class="lista__contenido">1 Año</td>
+                    <td class="lista__contenido">Mediano</td>
+                    <td class="lista__contenido">20kg</td>
+                    <td class="lista__contenido"><i class="fa-solid fa-pencil pencil"></i></td>
+                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
+                </tr>
+                <tr class="lista__fila">
+                    <td class="lista__contenido">010</td>
+                    <td class="lista__contenido">Zeus</td>
+                    <td class="lista__contenido">adulto</td>
+                    <td class="lista__contenido">Doberman</td>
+                    <td class="lista__contenido">Macho</td>
+                    <td class="lista__contenido">negro y marrón</td>
+                    <td class="lista__contenido">5 Años</td>
+                    <td class="lista__contenido">Grande</td>
+                    <td class="lista__contenido">35kg</td>
+                    <td class="lista__contenido"><i class="fa-solid fa-pencil pencil"></i></td>
+                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
+                </tr>
+                <tr class="lista__fila">
+                    <td class="lista__contenido">011</td>
+                    <td class="lista__contenido">Coco</td>
+                    <td class="lista__contenido">cachorro</td>
+                    <td class="lista__contenido">Shih Tzu</td>
+                    <td class="lista__contenido">Macho</td>
+                    <td class="lista__contenido">blanco y marrón</td>
+                    <td class="lista__contenido">2 Años</td>
+                    <td class="lista__contenido">Pequeño</td>
+                    <td class="lista__contenido">7kg</td>
+                    <td class="lista__contenido"><i class="fa-solid fa-pencil pencil"></i></td>
+                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
+                </tr>
+            </table>
+            <div class="btn-agregar">
+                <a href="form-mascota.html"> <i class="fa-solid fa-user-plus"></i>
+                </a>
+                <h3>Nueva Mascota</h3>
+            </div>
+        </div>
+    </div>
+    <!-- Pie de pagina -->
+    <footer class="footer">
+        <div class="contenedor__footer contenedor">
+            <div class="footer__dir">
+                <h3 class="footer__dir__titulo">Direccion</h3>
+                <p class="footer__parrafo">
+                    Calle, Gral. Juan Manuel Torrea 40 bis, esquina José María, Iztapalapa, 09100 Parras de la Fuente,
+                    CDMX
+                </p>
+                <h3 class="footer__dir__titulo">Contacto</h3>
+                <p class="footer__parrafo centrar">
+                    <i class="fa-solid fa-phone"></i> 5529459032
+                </p>
+
+            </div>
+            <div class="footer__social">
+                <h3 class="footer__social__titulo">Redes Sociales</h3>
+                <div class="footer__social__enlaces">
+                    <a href="#" class="footer__enlace"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                    <a href="#" class="footer__enlace"><i class="fa-brands fa-whatsapp"></i>whatsapp</a>
+                    <a href="#" class="footer__enlace"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
