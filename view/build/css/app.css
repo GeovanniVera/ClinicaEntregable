@@ -643,3 +643,39 @@ p {
   cursor: pointer;
   border: none;
 }
+
+.hidden{
+  display: none;
+}
+
+.alerta-eliminado{
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background-color: #dc2626;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 2rem 0;
+}
+
+.animation{
+  animation: delete 2s ;
+}
+
+@keyframes delete {
+  0%{
+    opacity: 1;
+  }
+  25%{
+    opacity: 0.8;
+  }
+  50%{
+    opacity: 0.6;
+  }
+  75%{
+    opacity: 0.4;
+  }
+  100%{
+    opacity: 0.2;
+  }
+}
