@@ -1,0 +1,126 @@
+/*Header*/
+.header {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 4rem 0;
+}
+
+.contenedor__header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contenedor__header .header__info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+@media (min-width: 768px) {
+    .contenedor__header .header__info {
+        flex-direction: row;
+    }
+}
+
+.contenedor__us {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .contenedor__us {
+        justify-content: flex-start;
+    }
+}
+
+.contenedor__us i {
+    color: #721d1d;
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.contenedor__us p {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#logo__enlace {
+    width: 20%;
+}
+
+.header__logo {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .header__logo {
+        width: 80%;
+    }
+}
+
+.header__titulo {
+    width: 80%;
+    text-align: center;
+    font-size: 2.8rem;
+    color: #1A3931;
+}
+
+@media (min-width: 768px) {
+    .header__titulo {
+        text-align: left;
+        font-size: 3.2rem;
+    }
+}
+
+.header__nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+}
+
+@media (min-width: 768px) {
+    .header__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: start;
+        gap: 4rem;
+    }
+}
+
+.header__nav .header__enlace {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 700;
+    transition: all 0.8s;
+    font-size: 1.8rem;
+}
+
+.header__nav .header__enlace:hover {
+    color: #a52c2c;
+}
+
+.red {
+    color: #721d1d;
+}

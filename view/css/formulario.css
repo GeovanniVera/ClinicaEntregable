@@ -1,0 +1,69 @@
+
+/* Formularios */
+.contenido-formulario {
+    background-color: #1A3931;
+    padding: 5% 0 5% 0;
+    height: 60vh;
+  }
+  
+  .contenedor-formulario {
+    width: 80%;
+    margin: auto;
+  
+  }
+  
+  .contenedor-formulario h3 {
+    color: #ffffff;
+    margin-bottom: 4rem;
+  }
+  
+  .f1,
+  .f2,
+  .f3,
+  .f4,
+  .f5 {
+    overflow: hidden;
+  }
+  
+  .col-1,
+  .col-2 {
+    width: 48%;
+    float: left;
+    margin-left: 2%;
+    margin-bottom: 2rem;
+  }
+  
+  .col-1 input,
+  .col-2 input {
+    width: 100%;
+    padding: 1rem;
+    border-style: inset;
+  
+  }
+  
+  .col-1 label,
+  .col-2 label {
+    color: #ffffff;
+  }
+  
+  .col-1 #aceptar{
+    background-color: #00A884;
+    
+  }
+  
+  .col-1 #cancelar{
+    background-color: #a80b00;
+  }
+  .col-1 #aceptar,
+  .col-1 #cancelar{
+    color: #fff;
+    width: 25%;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .hidden{
+    display: none;
+  }
+  
+ 

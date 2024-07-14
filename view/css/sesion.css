@@ -1,0 +1,120 @@
+/*Sesion*/
+.pagina-sesion {
+    background-color: #1A3931;
+    padding: 10rem 5rem;
+}
+
+.contenedor__sesion {
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+@media (min-width: 1200px) {
+    .contenedor__sesion {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor__sesion {
+        flex-direction: column;
+    }
+}
+
+.contenedor__sesion .sesion__left {
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    margin: auto;
+    position: relative;
+    transition: all 0.6s;
+}
+
+.contenedor__sesion .sesion__left:hover {
+    box-shadow: 0 0 10px 0 #00A884;
+}
+
+.contenedor__sesion .sesion__left .left-capa {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.2039215686);
+}
+
+@media (max-width: 768px) {
+    .contenedor__sesion .sesion__left {
+        display: none;
+        z-index: -200;
+    }
+}
+
+.contenedor__sesion .sesion__left .sesion__logo {
+    width: 200px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 200;
+}
+
+.contenedor__sesion .sesion__right {
+    width: 50%;
+    background-color: #721d1d;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 100%;
+    transition: all 0.6s;
+}
+
+.contenedor__sesion .sesion__right:hover {
+    box-shadow: 0 0 10px 0 #00A884;
+}
+
+@media (max-width: 768px) {
+    .contenedor__sesion .sesion__right {
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+.sesion__formulario {
+    width: 60%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.sesion__formulario .sesion__formulario__titulo {
+    color: #ffffff;
+}
+
+.sesion__formulario .sesion__formulario__input {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-align: center;
+    transition: all 0.8S;
+}
+
+.sesion__formulario .sesion__formulario__input:hover {
+    background-color: #cccccc;
+    color: #0d0210;
+}
+
+.sesion__formulario .sesion__formulario__btn {
+    background-color: #ffffff;
+    color: #0d0210;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+.sesion__formulario .sesion__formulario__btn:hover {
+    background-color: #cccccc;
+}
