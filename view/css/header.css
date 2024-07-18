@@ -76,6 +76,8 @@
     text-align: center;
     font-size: 2.8rem;
     color: #1A3931;
+    /*text-shadow: 3px 2px #000;*/
+
 }
 
 @media (min-width: 768px) {
