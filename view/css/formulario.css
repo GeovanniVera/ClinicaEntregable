@@ -3,7 +3,7 @@
 .contenido-formulario {
     background-color: #1A3931;
     padding: 5% 0 5% 0;
-    height: 60vh;
+    height: 90vh;
   }
   
   .contenedor-formulario {
@@ -38,7 +38,7 @@
     width: 100%;
     padding: 1rem;
     border-style: inset;
-    
+    background-color: #fff;
   }
   
   .col-1 select,.col-2 select{
@@ -77,4 +77,8 @@
  .sel-flex{
   display: flex;
   flex-direction: column;
+ }
+
+ .mr{
+  margin-left: 20%;
  }

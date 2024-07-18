@@ -41,7 +41,7 @@
     transition: all 0.6s ease-in;
   }
   .lista__fila .lista__contenido img {
-    width: 100px;
+    width: 80px;
 
   }
   .lista__fila .lista__contenido:hover {
