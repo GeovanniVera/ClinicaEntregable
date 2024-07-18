@@ -48,9 +48,14 @@
                     </div>
                     
                     <!-- Columna 2 -->
-                    <div class="col-2">
+                    <div class="col-2 sel-flex">
                         <label for="">Tipo</label>
-                        <input type="text" required>
+                        <!-- <input type="text" required> -->
+                         <select name="tipo" id="">
+                            <option value="">Gato</option>
+                            <option value="">Perro</option>
+                            <option value="">Tortuga</option>
+                         </select>
                     
                     </div>
                     <br>
@@ -61,13 +66,23 @@
                     <!-- columna 1 -->
                     <div class="col-1">
                         <label>Raza</label>
-                        <input type="text" required>
+                        <!-- -<se type="text" required> -->
+                        <select name="raza" id="">
+                            <option value="">chihuahua</option>
+                            <option value="">labrador</option>
+                            <option value="">Pug</option>
+                            <option value="">Husky</option>
+                        </select>
                     </div>
                     
                     <!-- Columna 2 -->
-                    <div class="col-2">
+                    <div class="col-2 sel-flex">
                         <label for="">Sexo</label>
-                        <input type="text" required>
+                        <!-- <input type="text" required> -->
+                         <select name="sexo" id="">
+                            <option value="">Macho</option>
+                            <option value="">Hembra</option>
+                         </select>
                         
                     </div>
                     <br>
@@ -84,8 +99,8 @@
                     </div>
                     <!-- Columna 2 -->
                     <div class="col-2">
-                        <label for="">Edad</label>
-                        <input type="number" step="any" required>
+                        <label for="">Fecha de Nacimiento</label>
+                        <input type="date"  required>
                         
                     </div>
                 </div>

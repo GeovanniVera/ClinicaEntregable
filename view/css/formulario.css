@@ -38,7 +38,15 @@
     width: 100%;
     padding: 1rem;
     border-style: inset;
+    
+  }
   
+  .col-1 select,.col-2 select{
+    width: 100%;
+    padding: 1rem;
+    border-style: inset;
+    text-align: center;
+    text-transform: uppercase;
   }
   
   .col-1 label,
@@ -66,4 +74,7 @@
     display: none;
   }
   
- 
+ .sel-flex{
+  display: flex;
+  flex-direction: column;
+ }
