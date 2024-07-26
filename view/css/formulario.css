@@ -3,7 +3,7 @@
 .contenido-formulario {
     background-color: #1A3931;
     padding: 5% 0 5% 0;
-    height: 90vh;
+    height: auto;
   }
   
   .contenedor-formulario {
@@ -80,5 +80,9 @@
  }
 
  .mr{
+  width: 60%;
   margin-left: 20%;
+  display: flex;
+
+  gap:2rem;
  }
