@@ -22,15 +22,22 @@
             </div>
             <div class="contenedor__us">
                 <i class="fa-solid fa-user"></i>
-                <p>Geovanni Vera</p>
+                <p>Usuario</p>
             </div>
             <nav class="header__nav">
                 <a href="lista-servicios.html" class="header__enlace"><i class="fa-solid fa-shield-dog"></i> Servicio</a>
                 <a href="lista-mascota.html" class="header__enlace"><i class="fa-solid fa-dog"></i> Mascota</a>
                 <a href="listaCliente.html" class="header__enlace"><i class="fa-solid fa-person"></i> Cliente</a>
-                <a href="lista-empleado.html" class="header__enlace"><i class="fa-solid fa-user-nurse"></i> Empleado</a>
+                <a href="lista-empleado.html" class="header__enlace red"><i class="fa-solid fa-user-nurse"></i> Empleado</a>
                 <a href="lista-usuario.html" class="header__enlace"><i class="fa-solid fa-user"></i> Usuario</a>
                 <a href="lista-inventario.html" class="header__enlace"><i class="fa-solid fa-bottle-water"></i> Inventario</a>
+                <a href="lista-insumos.html" class="header__enlace"><i class="fa-solid fa-bottle-water"></i> Insumo</a>
+                <a href="lista-vacunas.html" class="header__enlace"><i class="fa-solid fa-bottle-water"></i> Vacunas</a>
+                <a href="lista-diagnosticos.html" class="header__enlace"><i class="fa-solid fa-stethoscope"></i> Diagnosticos</a>
+                <a href="lista-tratamientos.html" class="header__enlace"><i class="fa-solid fa-tablets"></i> Tratamientos</a>
+                <a href="lista-alergias.html" class="header__enlace"><i class="fa-solid fa-box-tissue"></i> Alergias</a>
+                <a href="lista-cirugias.html" class="header__enlace"><i class="fa-solid fa-mask-face"></i> Cirugias</a>
+                <a href="historial-vacunas.html" class="header__enlace"><i class="fa-solid fa-sheet-plastic"></i> Historial Clinico</a>
                 <a href="index.html" class="header__enlace"><i class="fa-solid fa-user-xmark"></i> cerrar sesion</a>
             </nav>
         </div>
@@ -39,6 +46,7 @@
     <div class="contenido-formulario">
         <div class="contenedor contenedor-formulario">
             <form action="">
+                <h3>Datos Generales</h3>
                 <!-- Fila 1 -->
                 <div class="f1">
                     <!-- columna 1 -->
@@ -65,12 +73,37 @@
                         <label for="">Rol</label>
                         <select name="" id="">
                             <option value="">Veterinario</option>
+                            <option value="">Recepcionista</option>
                         </select>
                     </div>
                 </div>
-                <!-- Fin f2 -->
-                <!-- F3 -->
                 <div class="f3">
+                    <!-- Columna 1 -->
+                    <div class="col-2">
+                        <label for="">Cedula Profesional</label>
+                        <input type="number" required>
+                    </div>
+                    <!-- Columna 2 -->
+                    <div class="col-1">
+                        <label for="">Status</label>
+                        <select name="" id="">
+                            <option value="">Activo</option>
+                            <option value="">Inactivo</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="f4">
+                    <div class="col-2">
+                        <label for="">Fotografia</label>
+                        <input type="file" required>
+                    </div>
+                    <div class="col-1">
+                        <label for="">Fecha de Inicio</label>
+                        <input type="date" required>
+                    </div>
+                </div>
+                <div class="f5">
+                    <br><br><h3>Contacto</h3>
                     <!-- Columna 1 -->
                     <div class="col-2">
                         <label for="">Telefono Movil</label>
@@ -78,26 +111,21 @@
                     </div>
                     <!-- Columna 2 -->
                     <div class="col-1">
-                        <label for="">Telefono Fijo</label>
+                        <label for="">Coctacto Emergencia</label>
                         <input type="tel" required>
                     </div>
                 </div>
-                <div class="f4">
+                <div class="f6">
                     <!-- Columna 1 -->
                     <div class="col-2">
                         <label for="">Correo Electronico</label>
                         <input type="email" required>
                     </div>
-                    <!-- Columna 2 -->
-                    <div class="col-1">
-                        <label for="">Cedula Profesional</label>
-                        <input type="text" required>
-                    </div>
                 </div>
-                <div class="f5">
+                <div class="f7">
                     <!-- Columna 1 -->
                     <div class="col-1">
-                        <input type="submit" value="aceptar" id="aceptar">
+                        <input type="submit" value="Aceptar" id="aceptar">
                         <input type="submit" value="Cancelar" id="cancelar">
                     </div>
                 </div>
