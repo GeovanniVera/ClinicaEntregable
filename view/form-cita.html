@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/482ad17f17.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/generales.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/formulario.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
 
@@ -21,7 +21,7 @@
                 <h2 class="header__titulo">software de gestion veterinaria</h2>
             </div>
             <div class="contenedor__us">
-                <i class="fa-solid fa-user"></i>                
+                <i class="fa-solid fa-user"></i>
                 <p>Usuario</p>
             </div>
             <nav class="header__nav">
@@ -39,20 +39,81 @@
                 <a href="lista-cirugias.html" class="header__enlace"><i class="fa-solid fa-mask-face"></i> Cirugias</a>
                 <a href="historial-vacunas.html" class="header__enlace"><i class="fa-solid fa-sheet-plastic"></i> Historial Clinico</a>
                 <a href="generar-contrato-medicina.html" class="header__enlace"><i class="fa-solid fa-file-contract"></i> Contrato </a>
-                <a href="programar-cita.html" class="header__enlace"><i class="fa-solid fa-thumbtack"></i>Programar Cita</a>
+                <a href="programar-cita.html" class="header__enlace red"><i class="fa-solid fa-thumbtack"></i>Programar Cita</a>
                 <a href="generar-comprobantepago.html" class="header__enlace"><i class="fa-solid fa-wallet"></i>Comprobante de Pago</a>
                 <a href="index.html" class="header__enlace"><i class="fa-solid fa-user-xmark"></i> Cerrar sesion</a>
-            </nav>
         </div>
     </header>
-    <!-- Contenido Index -->
-    <div class="pagina-perfil">
-        <!-- Primera Columna -->
-        <div class=" contenedor__perfil contenedor">
 
+    <div class="contenido-formulario">
+        <div class="contenedor contenedor-formulario">
+            <form action="programar-cita.html">
+                <h3>Programar Cita</h3>
+                <!-- Fila 1 -->
+                <div class="f1">
+                    <!-- columna 1 -->
+                    <div class="col-1">
+                        <label>Correo Electronico</label>
+                        <input type="email" required>
+                    </div>
+                    <!-- Columna 2 -->
+                    <div class="col-2">
+                        <label for="">Nombre del Dueño</label>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <!-- Fin F1 -->
+                <!-- F2 -->
+                <div class="f2">
+                    <!-- columna 1 -->
+                    <div class="col-1">
+                        <label>Nombre de la Mascota</label>
+                        <select name="" id="">
+                            <option value="">Firulais</option>
+                            <option value="">Lia</option>
+                        </select>
+                    </div>
+                    <div class="col-2">
+                        <label for="">Fecha</label>
+                        <input type="date" required>
+                    </div>
+                </div>
+                <div class="f4">
+                    <!-- columna 1 -->
+                    <div class="col-1">
+                        <label>Hora</label>
+                        <input type="datetime" required>
+                        </div>
+                    <div class="col-2">
+                        <label for="">Motivo</label>
+                        <select name="" id="">
+                            <option value="">Consulta General</option>
+                            <option value="">Vacunacion</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="f5">
+                    <!-- columna 1 -->
+                    <div class="col-1">
+                        <label>Empleado</label>
+                        <select name="" id="">
+                            <option value="">Edgar</option>
+                            <option value="">Sofia</option>
+                        </select>
+                        </div>
+                </div>
+                <div class="f6">
+                    <!-- Columna 1 -->
+                    <div class="col-1">
+                        <input type="submit" value="aceptar" id="aceptar">
+                        <input type="submit" value="Cancelar" id="cancelar">
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
-    <!-- Pie de pagina -->
+
+
     <footer class="footer">
         <div class="contenedor__footer contenedor">
             <div class="footer__dir">
@@ -77,6 +138,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/app.js"></script>
 </body>
-
 </html>

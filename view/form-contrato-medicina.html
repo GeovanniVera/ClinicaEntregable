@@ -28,7 +28,7 @@
                 <a href="lista-servicios.html" class="header__enlace"><i class="fa-solid fa-shield-dog"></i> Servicio</a>
                 <a href="lista-mascota.html" class="header__enlace"><i class="fa-solid fa-dog"></i> Mascota</a>
                 <a href="listaCliente.html" class="header__enlace"><i class="fa-solid fa-person"></i> Cliente</a>
-                <a href="lista-empleado.html" class="header__enlace red"><i class="fa-solid fa-user-nurse"></i> Empleado</a>
+                <a href="lista-empleado.html" class="header__enlace"><i class="fa-solid fa-user-nurse"></i> Empleado</a>
                 <a href="lista-usuario.html" class="header__enlace"><i class="fa-solid fa-user"></i> Usuario</a>
                 <a href="lista-inventario.html" class="header__enlace"><i class="fa-solid fa-box-archive"></i> Inventario</a>
                 <a href="lista-insumos.html" class="header__enlace"><i class="fa-solid fa-bottle-water"></i> Insumo</a>
@@ -38,27 +38,29 @@
                 <a href="lista-alergias.html" class="header__enlace"><i class="fa-solid fa-box-tissue"></i> Alergias</a>
                 <a href="lista-cirugias.html" class="header__enlace"><i class="fa-solid fa-mask-face"></i> Cirugias</a>
                 <a href="historial-vacunas.html" class="header__enlace"><i class="fa-solid fa-sheet-plastic"></i> Historial Clinico</a>
-                <a href="generar-contrato-medicina.html" class="header__enlace"><i class="fa-solid fa-file-contract"></i> Contrato </a>
+                <a href="generar-contrato-medicina.html" class="header__enlace red"><i class="fa-solid fa-file-contract"></i> Contrato </a>
                 <a href="programar-cita.html" class="header__enlace"><i class="fa-solid fa-thumbtack"></i>Programar Cita</a>
                 <a href="generar-comprobantepago.html" class="header__enlace"><i class="fa-solid fa-wallet"></i>Comprobante de Pago</a>
                 <a href="index.html" class="header__enlace"><i class="fa-solid fa-user-xmark"></i> Cerrar sesion</a>
+            </nav>
         </div>
     </header>
     <!-- Contenido Formulario Usuario -->
     <div class="contenido-formulario">
         <div class="contenedor contenedor-formulario">
-            <form action="lista-empleado.html">
-                <h3>Datos Generales</h3>
+            <form action="generar-contrato-medicina.html">
+                <h3>Registrar Contrato Medicina Preventiva</h3>
                 <!-- Fila 1 -->
                 <div class="f1">
+                    <h3>Datos Cliente</h3>
                     <!-- columna 1 -->
                     <div class="col-1">
-                        <label>Nombre</label>
-                        <input type="text" required>
+                        <label>Correo Electronico</label>
+                        <input type="email" required>
                     </div>
                     <!-- Columna 2 -->
                     <div class="col-2">
-                        <label for="">Apellido Paterno</label>
+                        <label for="">Nombre</label>
                         <input type="text" required>
                     </div>
                 </div>
@@ -67,67 +69,97 @@
                 <div class="f2">
                     <!-- columna 1 -->
                     <div class="col-1">
-                        <label>Apellido Materno</label>
+                        <label>Apellido Paterno</label>
                         <input type="text" required>
                     </div>
-                    <!-- Columna 2 -->
-                    <div class="col-2 sel-flex">
-                        <label for="">Rol</label>
-                        <select name="" id="">
-                            <option value="">Veterinario</option>
-                            <option value="">Recepcionista</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="f3">
-                    <!-- Columna 1 -->
-                    <div class="col-2">
-                        <label for="">Cedula Profesional</label>
-                        <input type="number" required>
-                    </div>
-                    <!-- Columna 2 -->
-                    <div class="col-1">
-                        <label for="">Status</label>
-                        <select name="" id="">
-                            <option value="">Activo</option>
-                            <option value="">Inactivo</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="f4">
-                    <div class="col-2">
-                        <label for="">Fotografia</label>
-                        <input type="file" required>
-                    </div>
-                    <div class="col-1">
-                        <label for="">Fecha de Inicio</label>
-                        <input type="date" required>
-                    </div>
-                </div>
-                <div class="f5">
-                    <br><br><h3>Contacto</h3>
-                    <!-- Columna 1 -->
                     <div class="col-2">
                         <label for="">Telefono Movil</label>
                         <input type="tel" required>
                     </div>
+                </div>
+                <div class="f3">
+                    <br>
+                    <h3>Datos Mascota</h3>
                     <!-- Columna 2 -->
                     <div class="col-1">
-                        <label for="">Coctacto Emergencia</label>
-                        <input type="tel" required>
+                        <label for="">Nombre</label>
+                        <select name="" id="">
+                            <option value="">Firulais</option>
+                            <option value="">Hela</option>
+                            <option value="">Peluche</option>
+                        </select>
+                    </div>
+                    <div class="col-1">
+                        <label for="">Tipo</label>
+                        <input type="text" required>
                     </div>
                 </div>
-                <div class="f6">
-                    <!-- Columna 1 -->
-                    <div class="col-2">
-                        <label for="">Correo Electronico</label>
-                        <input type="email" required>
+                <div class="f3">
+                    <!-- Columna 2 -->
+                    <div class="col-1">
+                        <label for="">Raza</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="col-1">
+                        <label for="">Fecha de Nacimiento</label>
+                        <input type="date" required>
                     </div>
                 </div>
-                <div class="f7">
+                <div class="f3">
+                    <br>
+                    <h3>Datos Contrato</h3>
+                    <!-- Columna 2 -->
+                    <div class="col-1">
+                        <label for="">Tipo de Servicio</label>
+                        <select name="" id="">
+                            <option value="">Vacunacion</option>
+                            <option value="">Chequeo General</option>
+                        </select>
+                    </div>
+                    <div class="col-1">
+                        <label for="">Fecha de Inicializacion</label>
+                        <input type="date" required>
+                    </div>
+                </div>
+                <div class="f3">
+                    <!-- Columna 2 -->
+                    <div class="col-1">
+                        <label for="">Frecuncia de Servico</label>
+                        <select name="" id="">
+                            <option value="">Mensual</option>
+                            <option value="">Bimestral</option>
+                            <option value="">Trimestral</option>
+                            <option value="">Semestral</option>
+                            <option value="">Anual</option>
+                        </select>
+                    </div>
+                    <div class="col-1">
+                        <label for="">Fecha de Finalizacion</label>
+                        <input type="date" required>
+                    </div>
+                </div>
+                <div class="f3">
+                    <!-- Columna 2 -->
+                    <div class="col-1">
+                        <label for="">Empleado a Cargo</label>
+                        <select name="" id="">
+                            <option value="">Edgar</option>
+                            <option value="">Sofia</option>
+                        </select>
+                    </div>
+                    <div class="col-1">
+                        <label for="">Estatus</label>
+                        <select name="" id="">
+                            <option value="">Activa</option>
+                            <option value="">Completada</option>
+                            <option value="">Cancelada</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="f5">
                     <!-- Columna 1 -->
                     <div class="col-1">
-                        <input type="submit" value="Aceptar" id="aceptar">
+                        <input type="submit" value="aceptar" id="aceptar">
                         <input type="submit" value="Cancelar" id="cancelar">
                     </div>
                 </div>
