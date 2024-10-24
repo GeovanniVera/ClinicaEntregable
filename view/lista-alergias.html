@@ -42,39 +42,28 @@
         </div>
     </header>
     <!-- Contenido Index -->
-    <div class="pagina-lista">
-        <!-- Primera Columna -->
-        <div class=" contenedor__lista contenedor">
-            <h2>Alergias</h2>
-            <table class="lista">
-                <tr class="lista__fila">
-                    <th class="lista__encabezado">ID</th>
-                    <th class="lista__encabezado">Nombre</th>
-                    <th class="lista__encabezado">Sintomas</th>
-                    <th class="lista__encabezado" colspan="2">Operaciones</th>
+    <div class=" contenedor__lista contenedor">
+        <h2>Alergias</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Sintomas</th>
+                    <th colspan="2">Operaciones</th>
                 </tr>
-                <tr class="lista__fila">
-                    <td class="lista__contenido">001</td>
-                    <td class="lista__contenido">Picadura de mosco</td>
-                    <td class="lista__contenido">Deilidad General <br> Hinchazón</td>
-                    <td class="lista__contenido"><a href="form-empleado.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td >001</td>
+                    <td >Picadura de mosco</td>
+                    <td >Deilidad General <br> Hinchazón</td>
+                    <td ><a href="form-empleado.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
+                    <td ><i class="fa-solid fa-trash trash"></i></td>
                 </tr>
-                <tr class="lista__fila">
-                    <td class="lista__contenido">002</td>
-                    <td class="lista__contenido">Alergia a las pulgas</td>
-                    <td class="lista__contenido">Picazón Intensa<br> Hinchazón <br> Inflamación</td>
-                    <td class="lista__contenido"><a href="form-empleado.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
-                </tr>
-            </table>
-            <div class="btn-agregar">
-                <a href="form-alergia.html"> <i class="fa-solid fa-plus"></i>
-                    <h3>Nuevo Alergia</h3>
-                </a>
-
-            </div>
-        </div>
+            </tbody>
+        </table>
+        <a href="form-alergia.html" class="btn"> Agregar</a>
     </div>
     <!-- Pie de pagina -->
     <footer class="footer">

@@ -42,44 +42,31 @@
         </div>
     </header>
     <!-- Contenido Index -->
-    <div class="pagina-lista">
-        <!-- Primera Columna -->
-        <div class=" contenedor__lista contenedor">
-            <h2>Usuarios</h2>
-            <table class="lista">
-                <tr class="lista__fila">
-                    <th class="lista__encabezado">ID Empleado</th>
-                    <th class="lista__encabezado">Rol</th>
-                    <th class="lista__encabezado">Contraseña</th>
-                    <th class="lista__encabezado">Estatus</th>
-                    <th class="lista__encabezado" colspan="2">Operaciones</th>
+    <div class=" contenedor__lista contenedor">
+        <h2>Usuarios</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID Empleado</th>
+                    <th>Rol</th>
+                    <th>Contraseña</th>
+                    <th>Estatus</th>
+                    <th colspan="2">Operaciones</th>
                 </tr>
-                <tr class="lista__fila">
-                    <td class="lista__contenido">001</td>
-                    <td class="lista__contenido">Veterinario</td>
-                    <td class="lista__contenido">Cont#$%&a</td>
-                    <td class="lista__contenido">Activo</td>
-                    <td class="lista__contenido"><a href="form-usuario.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Veterinario</td>
+                    <td>Cont#$%&a</td>
+                    <td>Activo</td>
+                    <td><a href="form-usuario.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
+                    <td><i class="fa-solid fa-trash trash"></i></td>
                 </tr>
-                <tr class="lista__fila">
-                    <td class="lista__contenido">002</td>
-                    <td class="lista__contenido">Cirujano</td>
-                    <td class="lista__contenido">Cir#$%$</td>
-                    <td class="lista__contenido">Activo</td>
-                    <td class="lista__contenido"><a href="form-usuario.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
-                </tr>
+            </tbody>
+        </table>
 
-            </table>
-
-            <div class="btn-agregar">
-                <a href="form-usuario.html"> <i class="fa-solid fa-user-plus"></i>
-                </a>
-                <h3>Nuevo Usuario</h3>
-
-            </div>
-        </div>
+        <a href="form-usuario.html" class="btn">Agregar</a>
     </div>
     <!-- Pie de pagina -->
     <footer class="footer">

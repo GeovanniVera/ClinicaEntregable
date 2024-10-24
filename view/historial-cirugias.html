@@ -44,7 +44,7 @@
     </header>
     <div class="historial">
         <div class="contenedor">
-            <h2 class="align-left p-1 t-b">Historial Clinico</h2>
+            <h2 class="">Historial Clinico</h2>
             <nav class="nav-historial">
                 <a href="historial-vacunas.html">Vacunas</a>
                 <a href="historial-diagnosticos.html" >Diagnosticos</a>
@@ -53,32 +53,32 @@
                 <a href="historial-cirugias.html" id="red">Cirugias</a>
             </nav>
             <div class="contenedor-lista ">
-                <table class="lista" >
-                    <tr class="lista__fila">
-                        <th class="lista__encabezado">ID</th>
-                        <th class="lista__encabezado">ID Mascota</th>
-                        <th class="lista__encabezado">Nombre Cirugia</th>
-                        <th class="lista__encabezado">Fecha de Cirugia</th>
-                        <th class="lista__encabezado">Observaciones</th>
-                        <th class="lista__encabezado">Resultados</th>
-                        <th class="lista__encabezado" colspan="2">Operaciones</th>
-                    </tr>
-                    <tr class="lista__fila">
-                        <td class="lista__contenido">001</td>
-                        <td class="lista__contenido">002</td>
-                        <td class="lista__contenido">Cirugia de apendice</td>
-                        <td class="lista__contenido">30/07/2024</td>
-                        <td class="lista__contenido">Cuidados del paciente</td>
-                        <td class="lista__contenido">Efectivo</td>
-                        <td class="lista__contenido"><a href="form-servicio.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                        <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
-                    </tr>
+                <table class="table" >
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>ID Mascota</th>
+                            <th>Nombre Cirugia</th>
+                            <th>Fecha de Cirugia</th>
+                            <th>Observaciones</th>
+                            <th>Resultados</th>
+                            <th colspan="2">Operaciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td >001</td>
+                            <td >002</td>
+                            <td >Cirugia de apendice</td>
+                            <td >30/07/2024</td>
+                            <td >Cuidados del paciente</td>
+                            <td >Efectivo</td>
+                            <td ><a href="form-servicio.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
+                            <td ><i class="fa-solid fa-trash trash"></i></td>
+                        </tr>
+                    </tbody>
                 </table>
-            </div>
-            <div class="btn-agregar">
-                <a href="form-historial-cirugias.html"><i class="fa-solid fa-plus"></i>
-                    <h3>Nueva Cirugia</h3>
-                </a>
+                <a href="form-historial-cirugias.html" class="btn">Agregar</a>
             </div>
         </div>
     </div>
