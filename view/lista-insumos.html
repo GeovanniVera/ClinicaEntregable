@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pequeña Jungla</title>
     <script src="https://kit.fontawesome.com/482ad17f17.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/generales.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/lista-objetos.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="build/app.css">
 </head>
 
 <body>
@@ -45,45 +42,30 @@
         </div>
     </header>
     <!-- Contenido Index -->
-    <div class="pagina-lista">
-        <!-- Primera Columna -->
-        <div class=" contenedor__lista contenedor">
-            <h2>Insumos</h2>
-            <table class="lista" >
-                <tr class="lista__fila">
-                    <th class="lista__encabezado">ID</th>
-                    <th class="lista__encabezado">Nombre</th>
-                    <th class="lista__encabezado">Tipo</th>
-                    <th class="lista__encabezado">Descripcion</th>
-
-                    <th class="lista__encabezado" colspan="2">Operaciones</th>
+    <div class=" contenedor__lista contenedor">
+        <h2>Insumos</h2>
+        <table class="table" >
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Tipo</th>
+                    <th>Descripcion</th>
+                    <th colspan="2">Operaciones</th>
                 </tr>
-                <tr class="lista__fila">
-                    <td class="lista__contenido">001</td>
-                    <td class="lista__contenido">Jeringa</td>
-                    <td class="lista__contenido">Instrumento</td>
-                    <td class="lista__contenido">Tubo pequeño y hueco para inyectar o extraer líquidos</td>
-
-                    <td class="lista__contenido"><a href="form-insumo.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
-                </tr>
-                <tr class="lista__fila">
-                    <td class="lista__contenido">002</td>
-                    <td class="lista__contenido">Vacuna Rabia</td>
-                    <td class="lista__contenido">Medicamento</td>
-                    <td class="lista__contenido">Evita el desarrollo de la enfermedad y secundariamente, su posible transmisión a las personas.</td>
-
-                    <td class="lista__contenido"><a href="form-insumo.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
-                </tr>
-                
-                
-            </table>
-            <div class="btn-agregar">
-                <a href="form-insumo.html"> <i class="fa-solid fa-plus"></i></a>
-                <h3>Nuevo Insumo</h3>
-            </div>
-        </div>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Jeringa</td>
+                    <td>Instrumento</td>
+                    <td>Tubo pequeño y hueco para inyectar o extraer líquidos</td>
+                    <td><a href="form-insumo.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
+                    <td><i class="fa-solid fa-trash trash"></i></td>
+                </tr>  
+            </tbody>              
+        </table>
+        <a href="form-insumo.html">Agregar</a>
     </div>
     <!-- Pie de pagina -->
     <footer class="footer">

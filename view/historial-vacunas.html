@@ -1,18 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pequeña Jungla</title>
     <script src="https://kit.fontawesome.com/482ad17f17.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/generales.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/lista-objetos.css">
-    <link rel="stylesheet" href="css/historial.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="build/app.css">
 </head>
-
 <body>
     <header class="header">
         <div class="contenedor__header contenedor">
@@ -56,32 +51,28 @@
                 <a href="historial-alergias.html">Alergias</a>
                 <a href="historial-cirugias.html">Cirugias</a>
             </nav>
-            <div class="contenedor-lista ">
-                <table class="lista" >
-                    <tr class="lista__fila">
-                        <th class="lista__encabezado">ID</th>
-                        <th class="lista__encabezado">ID Mascota</th>
-                        <th class="lista__encabezado">Nombre Vacuna</th>
-                        <th class="lista__encabezado">Fecha Administracion</th>
-                        <th class="lista__encabezado">Dosis</th>
-                        <th class="lista__encabezado" colspan="2">Operaciones</th>
+            <div class="contenedor-lista">
+                <table class="table" >
+                    <tr>
+                        <th>ID</th>
+                        <th>ID Mascota</th>
+                        <th>Nombre Vacuna</th>
+                        <th>Fecha Administracion</th>
+                        <th>Dosis</th>
+                        <th colspan="2">Operaciones</th>
                     </tr>
-                    <tr class="lista__fila">
-                        <td class="lista__contenido">001</td>
-                        <td class="lista__contenido">002</td>
-                        <td class="lista__contenido">Rabia</td>
-                        <td class="lista__contenido">30/07/2024</td>
-                        <td class="lista__contenido">6</td>
-                        <td class="lista__contenido"><a href="form-servicio.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                        <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
+                    <tr>
+                        <td ">001</td>
+                        <td ">002</td>
+                        <td ">Rabia</td>
+                        <td ">30/07/2024</td>
+                        <td ">6</td>
+                        <td "><a href="form-servicio.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
+                        <td "><i class="fa-solid fa-trash trash"></i></td>
                     </tr>
                 </table>
             </div>
-            <div class="btn-agregar">
-                <a href="form-historial-vacunas.html"><i class="fa-solid fa-plus"></i>
-                    <h3>Nuevo Vacuna</h3>
-                </a>
-            </div>
+            <a href="form-historial-vacunas.html">Agregar</a>
         </div>
     </div>
     <!-- Pie de pagina -->
