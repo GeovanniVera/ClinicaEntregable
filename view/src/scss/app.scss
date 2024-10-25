@@ -1,6 +1,16 @@
+/*El uso de los use es organizar ocmo se van a procesar los archivos sass a css el orden es importante*/
+
 // Base
+@use 'base/normalize';
 @use 'base/generales' as g;
 @use 'base/variables' as v;
+@use 'base/utilidades' as u ;
 @use 'base/mixins' as m;
+// @use 'base/mixins'
 
 // layout
+@use 'layout/header';
+@use 'layout/navegador_general';
+@use 'layout/navegador_principal';
+@use 'layout/tablas';
+// @use 'layout';

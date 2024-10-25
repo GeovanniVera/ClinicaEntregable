@@ -1,0 +1,47 @@
+/*
+Los mixins son funciones reutilizables de codigo
+un mixin se genera con la palabra clave @mixin nombre_mixin($parametro){
+    accion:$parametro;
+}
+
+Ejemplo de uso  desde layout/header.scss
+
+.header {
+  @include m.button-styles($primary-color);
+}
+
+Revisar el app.scss si tienes dudas del alias que utilizaras en este ejemplo el alias es m
+
+un mixin puede tener parametros para hacer mas funcional el mixin
+*/
+
+/*Este mixin se utiliza para centrar un div*/
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+/*Este mixin es para agregar pequeñas transiciones*/
+@mixin transition($property) {
+    transition: $property 0.3s ease;
+}
+
+/*Este Mixin es para generar un botono*/
+@mixin button-styles($bg-color, $text-color: white, $padding: 10px 20px, $border-radius: 4px) {
+    padding: $padding;
+    border: none;
+    border-radius: $border-radius;
+    color: $text-color;
+    background-color: $bg-color;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    @include transition(background-color);
+  
+    &:hover {
+      background-color: darken($bg-color, 10%);
+    }
+  }
+  
