@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pequeña Jungla</title>
     <script src="https://kit.fontawesome.com/482ad17f17.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="build/app.css">
+    <link rel="stylesheet" href="/build/css/app.css">
 </head>
 <body>
     <header class="header">
@@ -50,33 +50,27 @@
                 <a href="generar-contrato-cirugia.html" id="red">Cirugia</a>
             </nav>
         <div class="contenedor-lista ">
-            <table class="lista" >
-                <tr class="lista__fila">
-                    <th class="lista__encabezado">Nombre del Cliente</th>
-                    <th class="lista__encabezado">Nombre de la Mascota</th>
-                    <th class="lista__encabezado">Nombre de la Cirugia</th>
-                    <th class="lista__encabezado">Fecha de Cirugia</th>
-                    <th class="lista__encabezado">Hora Programada</th>
-                    <th class="lista__encabezado">Estatus</th>
-                </tr>
-                <tr class="lista__fila">
-                    <td class="lista__contenido">Demian</td>
-                    <td class="lista__contenido">Hela</td>
-                    <td class="lista__contenido">Esterilización</td>
-                    <td class="lista__contenido">30/07/2024</td>
-                    <td class="lista__contenido">08:30</td>
-                    <td class="lista__contenido">Programada</td>
-
-                </tr>
-                <tr class="lista__fila">
-                    <td class="lista__contenido">Yessenia</td>
-                    <td class="lista__contenido">Luna</td>
-                    <td class="lista__contenido">Cirugia Estomacal</td>
-                    <td class="lista__contenido">21/08/2024</td>
-                    <td class="lista__contenido">10:00</td>
-                    <td class="lista__contenido">Completada</td>
-
-                </tr>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre del Cliente</th>
+                        <th>Nombre de la Mascota</th>
+                        <th>Nombre de la Cirugia</th>
+                        <th>Fecha de Cirugia</th>
+                        <th>Hora Programada</th>
+                        <th>Estatus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Demian</td>
+                        <td>Hela</td>
+                        <td>Esterilización</td>
+                        <td>30/07/2024</td>
+                        <td>08:30</td>
+                        <td>Programada</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
         <div class="btn-agregar">

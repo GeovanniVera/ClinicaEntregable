@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*El uso de los use es organizar ocmo se van a procesar los archivos sass a css el orden es importante*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -308,6 +310,9 @@ template {
   display: none;
 }
 
+/*En este archivo van todas las variables que podemos utilizar para el proyecto para usarse se debe poner el alias del archivo revisalo en app.scss
+    Ejemplo si estamos ubicados en _header.scss  .header{  background-color:v.$negro;}
+*/
 html {
   box-sizing: border-box;
 }
@@ -321,9 +326,29 @@ html {
   padding: 0;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .contenedor {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
 }
 
 /*
@@ -332,6 +357,31 @@ un mixin se genera con la palabra clave @mixin nombre_mixin($parametro){
     accion:$parametro;
 }
 
+Ejemplo de uso  desde layout/header.scss
+
+.header {
+  @include m.button-styles($primary-color);
+}
+
+Revisar el app.scss si tienes dudas del alias que utilizaras en este ejemplo el alias es m
+
 un mixin puede tener parametros para hacer mas funcional el mixin
 */
 /*Este mixin se utiliza para centrar un div*/
+/*Este mixin es para agregar pequeñas transiciones*/
+/*Este Mixin es para generar un botono*/
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table tr th,
+.table tr td {
+  padding: 10px;
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+.table thead tr {
+  background-color: #781b1b;
+  color: #fff;
+  text-transform: uppercase;
+}

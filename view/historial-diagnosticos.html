@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pequeña Jungla</title>
     <script src="https://kit.fontawesome.com/482ad17f17.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="build/app.css">
+    <link rel="stylesheet" href="/build/css/app.css">
 </head>
 <body>
     <header class="header">
@@ -53,23 +53,27 @@
             </nav>
             <div class="contenedor-lista ">
                 <table class="table" >
-                    <tr class="lista__fila">
-                        <th>ID</th>
-                        <th>ID Mascota</th>
-                        <th>Nombre Diagnostico</th>
-                        <th>Fecha de diagnostico</th>
-                        <th>Detalles</th>
-                        <th colspan="2">Operaciones</th>
-                    </tr>
-                    <tr class="lista__fila">
-                        <td>001</td>
-                        <td>002</td>
-                        <td>Estomacal</td>
-                        <td>30/07/2024</td>
-                        <td>dolor estomacal</td>
-                        <td><a href="form-servicio.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                        <td><i class="fa-solid fa-trash trash"></i></td>
-                    </tr>
+                    <thead>
+                        <tr class="lista__fila">
+                            <th>ID</th>
+                            <th>ID Mascota</th>
+                            <th>Nombre Diagnostico</th>
+                            <th>Fecha de diagnostico</th>
+                            <th>Detalles</th>
+                            <th colspan="2">Operaciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="lista__fila">
+                            <td>001</td>
+                            <td>002</td>
+                            <td>Estomacal</td>
+                            <td>30/07/2024</td>
+                            <td>dolor estomacal</td>
+                            <td><a href="form-servicio.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
+                            <td><i class="fa-solid fa-trash trash"></i></td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
             <a href="form-historial-diagnosticos.html">Agregar</a>

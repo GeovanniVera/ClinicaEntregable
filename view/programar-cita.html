@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pequeña Jungla</title>
     <script src="https://kit.fontawesome.com/482ad17f17.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="build/app.css">
+    <link rel="stylesheet" href="/build/css/app.css">
 </head>
 <body>
     <header class="header">
@@ -45,34 +45,29 @@
         <!-- Primera Columna -->
         <div class=" contenedor__lista contenedor">
             <h2>Citas</h2>
-            <table class="lista" >
-                <tr class="lista__fila">
-                    <th class="lista__encabezado">Nombre del Cliente</th>
-                    <th class="lista__encabezado">Nombre de la Mascota</th>
-                    <th class="lista__encabezado">Fecha</th>
-                    <th class="lista__encabezado">Hora</th>
-                    <th class="lista__encabezado">Motivo</th>
-                    <th class="lista__encabezado">Empleado a cargo</th>
-                    <th class="lista__encabezado">Estatus</th>
-                </tr>
-                <tr class="lista__fila">
-                    <td class="lista__contenido">Juan</td>
-                    <td class="lista__contenido">Firulais</td>
-                    <td class="lista__contenido">15/08/2024</td>
-                    <td class="lista__contenido">15:30</td>
-                    <td class="lista__contenido">Vacunacion</td>
-                    <td class="lista__contenido">Sofia</td>
-                    <td class="lista__contenido">En proceso</td>
-                </tr>
-                <tr class="lista__fila">
-                    <td class="lista__contenido">Sebastian</td>
-                    <td class="lista__contenido">Lia</td>
-                    <td class="lista__contenido">01/10/2024</td>
-                    <td class="lista__contenido">9:30</td>
-                    <td class="lista__contenido">Peluqueria</td>
-                    <td class="lista__contenido">Edgar</td>
-                    <td class="lista__contenido">En proceso</td>
-                </tr> 
+            <table class="table" >
+                <thead>
+                    <tr>
+                        <th>Nombre del Cliente</th>
+                        <th>Nombre de la Mascota</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Motivo</th>
+                        <th>Empleado a cargo</th>
+                        <th>Estatus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan</td>
+                        <td>Firulais</td>
+                        <td>15/08/2024</td>
+                        <td>15:30</td>
+                        <td>Vacunacion</td>
+                        <td>Sofia</td>
+                        <td>En proceso</td>
+                    </tr>
+                </tbody>
             </table>
             <div class="btn-agregar">
                 <a href="form-cita.html"> <i class="fa-solid fa-user-plus"></i></a>

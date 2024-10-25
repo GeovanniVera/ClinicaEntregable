@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pequeña Jungla</title>
     <script src="https://kit.fontawesome.com/482ad17f17.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="build/app.css">
+    <link rel="stylesheet" href="/build/css/app.css">
 </head>
 
 <body>
@@ -45,21 +45,25 @@
     <div class=" contenedor__lista contenedor">
         <h2>Vacunas</h2>
         <table class="table" >
-            <tr>
-                <th>ID</th>
-                <th>Fabricante</th>
-                <th>nombre</th>
-                <th>dosis</th>
-                <th colspan="2">Operaciones</th>
-            </tr>
-            <tr>
-                <td>001</td>
-                <td>Vacunas SADECV</td>
-                <td>Rabia</td>
-                <td>2 ml</td>
-                <td><a href="form-empleado.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                <td><i class="fa-solid fa-trash trash"></i></td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Fabricante</th>
+                    <th>nombre</th>
+                    <th>dosis</th>
+                    <th colspan="2">Operaciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Vacunas SADECV</td>
+                    <td>Rabia</td>
+                    <td>2 ml</td>
+                    <td><a href="form-empleado.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
+                    <td><i class="fa-solid fa-trash trash"></i></td>
+                </tr>
+            </tbody>
         </table>
         <a href="form-vacunas.html" class="btn">Agregar</a>
     </div>
