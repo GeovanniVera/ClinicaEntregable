@@ -1,4 +1,15 @@
-$fuente_principal : "Roboto", serif;
+/*En este archivo van todas las variables que podemos utilizar para el proyecto para usarse se debe poner el alias del archivo revisalo en app.scss
+    Ejemplo si estamos ubicados en _header.scss  .header{  background-color:v.$negro;}
+*/
+
+$fuente_principal :"Poppins", sans-serif;
 
 $regular:400;
 $bold:800;
+
+$verdeOscuro:#1a3930;
+$verde:#114d3b;
+$negro:#000;
+$rojo:#781b1b;
+$blanco:#fff;
+

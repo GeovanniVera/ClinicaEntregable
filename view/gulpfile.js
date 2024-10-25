@@ -14,7 +14,7 @@ export function css(done){
 }
 
 //Esta funcion escucha por cambios en los archivos sass
-export function watch(done){
+export function dev(done){
     watch('src/scss/**/*.scss',css)
     done();
 }
