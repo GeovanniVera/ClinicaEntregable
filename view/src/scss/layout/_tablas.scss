@@ -1,0 +1,25 @@
+@use 'base/variables' as v;
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+
+    tr {
+
+        th,
+        td {
+            padding: 10px;
+            border-collapse: collapse;
+            border: 1px solid v.$negro;
+        }
+
+    }
+
+    thead {
+        tr {
+            background-color: v.$rojo;
+            color: v.$blanco;
+            text-transform: uppercase;
+        }
+    }
+}
