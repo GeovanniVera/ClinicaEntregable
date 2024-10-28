@@ -370,6 +370,21 @@ un mixin puede tener parametros para hacer mas funcional el mixin
 /*Este mixin se utiliza para centrar un div*/
 /*Este mixin es para agregar pequeñas transiciones*/
 /*Este Mixin es para generar un botono*/
+.contenedor__sesion {
+  background-color: #781b1b;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sesion__formulario {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  justify-content: space-between;
+}
+
 .table {
   width: 100%;
   border-collapse: collapse;

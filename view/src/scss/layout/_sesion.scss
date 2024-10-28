@@ -1,0 +1,17 @@
+@use 'base/variables' as v;
+
+
+.contenedor__sesion{
+    background-color: v.$rojo;
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sesion__formulario{
+    display: flex;
+    flex-direction: column;
+    background-color: v.$blanco ;
+    justify-content: space-between;
+}
