@@ -385,6 +385,12 @@ un mixin puede tener parametros para hacer mas funcional el mixin
       the breakpoints I used were inspired by Bootstrap =>
       https://getbootstrap.com/docs/5.0/layout/breakpoints/
   */
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
 }
 @media only screen and (max-width: 575.98px) {
   .table {
@@ -392,6 +398,11 @@ un mixin puede tener parametros para hacer mas funcional el mixin
   }
 }
 @media only screen and (min-width: 575.99px) and (max-width: 767.98px) {
+  .table {
+    display: none;
+  }
+}
+@media only screen and (min-width: 767.99px) and (max-width: 1199.97px) {
   .table {
     display: none;
   }
@@ -425,17 +436,6 @@ un mixin puede tener parametros para hacer mas funcional el mixin
       the breakpoints I used were inspired by Bootstrap =>
       https://getbootstrap.com/docs/5.0/layout/breakpoints/
   */
-  /*
-      breakpoints are viewport arbitrary values,
-      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
-      the breakpoints I used were inspired by Bootstrap =>
-      https://getbootstrap.com/docs/5.0/layout/breakpoints/
-  */
-}
-@media only screen and (min-width: 767.99px) and (max-width: 1199.97px) {
-  .table-mobile {
-    display: none;
-  }
 }
 @media only screen and (min-width: 1199.98px) {
   .table-mobile {
@@ -465,5 +465,24 @@ un mixin puede tener parametros para hacer mas funcional el mixin
   color: #fff;
 }
 .table-mobile .fila:nth-of-type(even) .col-contenido a {
+  color: #fff;
+}
+
+.btn {
+  padding: 10px 20px;
+  display: inline-block;
+  border: none;
+  border-radius: 0px;
+  color: #fff;
+  background-color: #114d3b;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin: 10px 0;
+}
+.btn:hover {
+  background-color: rgb(7.7765957447, 35.2234042553, 26.9893617021);
   color: #fff;
 }

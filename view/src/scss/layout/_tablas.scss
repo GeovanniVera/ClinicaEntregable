@@ -11,7 +11,9 @@
         display: none;
     }
     
-
+    @include m.responsive(tablet){
+        display: none;
+    }
     tr {
 
 
@@ -48,9 +50,7 @@
 }
 
 .table-mobile{
-    @include m.responsive(tablet){
-        display: none;
-    }
+    
     @include m.responsive(laptop){
         display: none;
     }
@@ -84,4 +84,9 @@
             }
         }
     }
+}
+
+.btn{
+    @include m.button(inline-block,v.$verde,v.$blanco,10px 20px,0px);
+    margin: 10px 0;
 }

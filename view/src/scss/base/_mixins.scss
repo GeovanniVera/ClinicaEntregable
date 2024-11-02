@@ -16,6 +16,8 @@ un mixin puede tener parametros para hacer mas funcional el mixin
 */
 
 /*Este mixin se utiliza para centrar un div*/
+@use 'variables' as v;
+
 @mixin flex-center {
     display: flex;
     justify-content: center;
@@ -28,8 +30,9 @@ un mixin puede tener parametros para hacer mas funcional el mixin
 }
 
 /*Este Mixin es para generar un botono*/
-@mixin button-styles($bg-color, $text-color: white, $padding: 10px 20px, $border-radius: 4px) {
+@mixin button($display,$bg-color, $text-color: white, $padding: 10px 20px, $border-radius: 4px) {
     padding: $padding;
+    display: $display;
     border: none;
     border-radius: $border-radius;
     color: $text-color;
@@ -42,6 +45,7 @@ un mixin puede tener parametros para hacer mas funcional el mixin
   
     &:hover {
       background-color: darken($bg-color, 10%);
+      color: v.$blanco;
     }
   }
   
