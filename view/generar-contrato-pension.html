@@ -51,15 +51,19 @@
                 <a href="generar-contrato-cirugia.html">Cirugia</a>
             </nav>
         <div class="contenedor-lista ">
+            <div class="btn-agregar">
+                <a href="form-contrato-pension.html" class="btn">agregar</a>
+            </div>
+            <!-- Tabla que se vera solo en dispositivos grandes -->
             <table class="table" >
                 <thead>
                     <tr>
                         <th>Nombre del Cliente</th>
                         <th>Nombre de la Mascota</th>
-                        <th>Servicios</th>
+                        <th>Servicio</th>
                         <th>Fecha de Inicio</th>
                         <th>Fecha de Finalizacion</th>
-                        <th>Servicios Adicionales</th>
+                        <th>Servicio Adicional</th>
                         <th>Estatus</th>
                     </tr>
                 </thead>
@@ -67,20 +71,82 @@
                     <tr>
                         <td>Jose</td>
                         <td>Sparky</td>
-                        <td>Alimentacion <br> Esterilización <br></td>
+                        <td>Alimentacion</td>
                         <td>21/08/2024</td>
                         <td>30/09/2024</td>
-                        <td>Paseo Diario <br> Baño cada semana</td>
+                        <td>Paseo Diario</td>
                         <td>Activo</td>
                     </tr>
                 </tbody>
             </table>
+            <!-- Tabla que se vera en dispositivos pequeños -->
+            <div class="table-mobile">
+                <!-- Inicio de la fila mobile -->
+                <div class="fila">
+                    <div class="columna">
+                        <div class="col-header">Nombre del cliente</div>
+                        <div class="col-contenido">Jose</div>
+                    </div>
+                    <div class="columna">
+                        <div class="col-header">Nombre de la Mascota</div>
+                        <div class="col-contenido">Sparky</div>
+                    </div>
+                    <div class="columna">
+                        <div class="col-header">Servicio</div>
+                        <div class="col-contenido">Alimentacion</div>
+                    </div>
+                    <div class="columna">
+                        <div class="col-header">Fecha de inicio</div>
+                        <div class="col-contenido">21/08/2024</div>
+                    </div>
+                    <div class="columna">
+                        <div class="col-header">Fecha de finalizacion</div>
+                        <div class="col-contenido">30/09/2024</div>
+                    </div>
+                    <div class="columna">
+                        <div class="col-header">Servicio adicional</div>
+                        <div class="col-contenido">Paseo Diario</div>
+                    </div>
+                    <div class="columna">
+                        <div class="col-header">Estatus</div>
+                        <div class="col-contenido">Activo</div>
+                    </div>
+                </div>
+                <!-- Fin de la fila mobile -->
+                <div class="fila">
+                    <div class="columna">
+                        <div class="col-header">Nombre del cliente</div>
+                        <div class="col-contenido">Jose</div>
+                    </div>
+                    <div class="columna">
+                        <div class="col-header">Nombre de la Mascota</div>
+                        <div class="col-contenido">Sparky</div>
+                    </div>
+                    <div class="columna">
+                        <div class="col-header">Servicio</div>
+                        <div class="col-contenido">Alimentacion</div>
+                    </div>
+                    <div class="columna">
+                        <div class="col-header">Fecha de inicio</div>
+                        <div class="col-contenido">21/08/2024</div>
+                    </div>
+                    <div class="columna">
+                        <div class="col-header">Fecha de finalizacion</div>
+                        <div class="col-contenido">30/09/2024</div>
+                    </div>
+                    <div class="columna">
+                        <div class="col-header">Servicio adicional</div>
+                        <div class="col-contenido">Paseo Diario</div>
+                    </div>
+                    <div class="columna">
+                        <div class="col-header">Estatus</div>
+                        <div class="col-contenido">Activo</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="btn-agregar">
-            <a href="form-contrato-pension.html"><i class="fa-solid fa-plus"></i>
-                <h3>Nuevo Contrato</h3>
-            </a>
-        </div>
+
+        
     </div>
 </div>
     <footer class="footer">

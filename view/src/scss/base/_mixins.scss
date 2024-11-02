@@ -16,6 +16,8 @@ un mixin puede tener parametros para hacer mas funcional el mixin
 */
 
 /*Este mixin se utiliza para centrar un div*/
+@use 'variables' as v;
+
 @mixin flex-center {
     display: flex;
     justify-content: center;
@@ -28,8 +30,9 @@ un mixin puede tener parametros para hacer mas funcional el mixin
 }
 
 /*Este Mixin es para generar un botono*/
-@mixin button-styles($bg-color, $text-color: white, $padding: 10px 20px, $border-radius: 4px) {
+@mixin button($display,$bg-color, $text-color: white, $padding: 10px 20px, $border-radius: 4px) {
     padding: $padding;
+    display: $display;
     border: none;
     border-radius: $border-radius;
     color: $text-color;
@@ -42,6 +45,36 @@ un mixin puede tener parametros para hacer mas funcional el mixin
   
     &:hover {
       background-color: darken($bg-color, 10%);
+      color: v.$blanco;
     }
   }
   
+  @mixin responsive( $breakpoint ) {
+    /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+    @if $breakpoint == smartphone-portrait {
+        @media only screen and ( max-width: 575.98px ) {
+            @content;
+        }
+    }
+    @if $breakpoint == smartphone-landscape {
+        @media only screen and ( min-width: 575.99px ) and ( max-width: 767.98px ) {
+            @content;
+        }
+    }
+    @if $breakpoint == tablet {
+        @media only screen and ( min-width: 767.99px ) and ( max-width: 1199.97px ) {
+            @content;
+        }
+    }
+    @if $breakpoint == laptop {
+        @media only screen and ( min-width: 1199.98px  ){
+            @content;
+        }
+    }
+    
+}

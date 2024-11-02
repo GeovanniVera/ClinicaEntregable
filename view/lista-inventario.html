@@ -44,6 +44,7 @@
     <!-- Contenido Index -->
     <div class=" contenedor__lista contenedor">
         <h2>Inventario</h2>
+        <a href="form-inventario.html" class="btn">Agregar</a>
         <table class="table">
             <thead>
                 <tr>
@@ -69,7 +70,51 @@
                 </tr>
             </tbody>
         </table>
-        <a href="form-inventario.html">Agregar</a>
+        <!-- Tabla que se vera en dispositivos pequeños -->
+        <div class="table-mobile">
+            <!-- Inicio de la fila mobile -->
+            <div class="fila">
+                <div class="columna">
+                    <div class="col-header">id</div>
+                    <div class="col-contenido">1</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">imagen</div>
+                    <div class="col-contenido">
+                        <picture>
+
+                        </picture>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">Nombre</div>
+                    <div class="col-contenido">Jeringa</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">costo unitario</div>
+                    <div class="col-contenido">$600</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">cantidad</div>
+                    <div class="col-contenido">25</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">estatus</div>
+                    <div class="col-contenido">Disponible</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">editar</div>
+                    <div class="col-contenido"><a href="form-servicio.html"><i
+                                class="fa-solid fa-pencil pencil"></i></a></div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">Eliminar</div>
+                    <div class="col-contenido"><i class="fa-solid fa-trash trash"></i></div>
+                </div>
+
+            </div>
+            <!-- Fin de la fila mobile -->
+        </div>
     </div>
     <!-- Pie de pagina -->
     <footer class="footer">
