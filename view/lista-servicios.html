@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pequeña Jungla</title>
     <script src="https://kit.fontawesome.com/482ad17f17.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/generales.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/lista-objetos.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="build/css/app.css">
 </head>
-
 <body>
     <header class="header">
         <div class="contenedor__header contenedor">
@@ -46,135 +42,71 @@
         </div>
     </header>
     <!-- Contenido Index -->
-    <div class="pagina-lista">
-        <!-- Primera Columna -->
-        <div class=" contenedor__lista contenedor">
-            <h2>Servicios</h2>
-            <table class="lista" >
-                <tr class="lista__fila">
-                    <th class="lista__encabezado">ID</th>
-                    <th class="lista__encabezado">Imagen</th>
-                    <th class="lista__encabezado">Nombre</th>
-                    <th class="lista__encabezado">Descripcion</th>
-                    <th class="lista__encabezado">costo</th>
-                    <th class="lista__encabezado" colspan="2">Operaciones</th>
+    <div class=" contenedor__lista contenedor">
+        <h2>Servicios</h2>
+        <a href="form-servicio.html" class="btn">Agregar</a>
+        <table class="table" >
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Descripcion</th>
+                    <th>costo</th>
+                    <th colspan="2">Operaciones</th>
                 </tr>
-                <tr class="lista__fila">
-                    <td class="lista__contenido">001</td>
-                    <td class="lista__contenido"><img src="img/peluqueria.jpg" alt=""></td>
-                    <td class="lista__contenido">Peluqueria</td>
-                    <td class="lista__contenido">Servicio completo de peluqueria.</td>
-                    <td class="lista__contenido">$300</td>
-                    <td class="lista__contenido"><a href="form-servicio.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td><img src="img/peluqueria.jpg" alt=""></td>
+                    <td>Peluqueria</td>
+                    <td>Servicio completo de peluqueria.</td>
+                    <td>$300</td>
+                    <td><a href="form-servicio.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
+                    <td><i class="fa-solid fa-trash trash"></i></td>
                 </tr>
-                
-                <tr class="lista__fila">
-                    <td class="lista__contenido">002</td>
-                    <td class="lista__contenido"><img src="img/consulta.jpg" alt=""></td>
-                    <td class="lista__contenido">Consulta General</td>
-                    <td class="lista__contenido">Revisión médica general y diagnóstica.</td>
-                    <td class="lista__contenido">$500</td>
-                    <td class="lista__contenido"><a href="form-servicio.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
-                </tr>
-                
-                <tr class="lista__fila">
-                    <td class="lista__contenido">003</td>
-                    <td class="lista__contenido"><img src="img/vacunacion.jpeg" alt=""></td>
-                    <td class="lista__contenido">Vacunación</td>
-                    <td class="lista__contenido">Vacunas anuales para perros y gatos.</td>
-                    <td class="lista__contenido">$200</td>
-                    <td class="lista__contenido"><a href="form-servicio.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
-                </tr>
-                
-                <tr class="lista__fila">
-                    <td class="lista__contenido">004</td>
-                    <td class="lista__contenido"><img src="img/desparacitacion.jpg" alt=""></td>
-                    <td class="lista__contenido">Desparasitación</td>
-                    <td class="lista__contenido">Tratamiento completo contra parásitos.</td>
-                    <td class="lista__contenido">$150</td>
-                    <td class="lista__contenido"><a href="form-servicio.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
-                </tr>
+            </tbody>
+        </table>
+        <div class="table-mobile">
+            <!-- Inicio de la fila mobile -->
+            <div class="fila">
+                <div class="columna">
+                    <div class="col-header">id</div>
+                    <div class="col-contenido">1</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">imagen</div>
+                    <div class="col-contenido">
+                        <picture>
 
-                <tr class="lista__fila">
-                    <td class="lista__contenido">005</td>
-                    <td class="lista__contenido"><img src="img/cirugias.jpg" alt=""></td>
-                    <td class="lista__contenido">Cirugía</td>
-                    <td class="lista__contenido">Cirugías menores y mayores con anestesia.</td>
-                    <td class="lista__contenido">$2000</td>
-                    <td class="lista__contenido"><a href="form-servicio.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
-                </tr>
-
-                <tr class="lista__fila">
-                    <td class="lista__contenido">006</td>
-                    <td class="lista__contenido"><img src="img/hospitalizacion.jpg" alt=""></td>
-                    <td class="lista__contenido">Hospitalización</td>
-                    <td class="lista__contenido">Cuidados intensivos y monitoreos 24/7.</td>
-                    <td class="lista__contenido">$1000</td>
-                    <td class="lista__contenido"><a href="form-servicio.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
-                </tr>
-
-                <tr class="lista__fila">
-                    <td class="lista__contenido">007</td>
-                    <td class="lista__contenido"><img src="img/radiologia.jpg" alt=""></td>
-                    <td class="lista__contenido">Radiología</td>
-                    <td class="lista__contenido">Radiografías digitales de alta calidad.</td>
-                    <td class="lista__contenido">$700</td>
-                    <td class="lista__contenido"><a href="form-servicio.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
-                </tr>
-
-                <tr class="lista__fila">
-                    <td class="lista__contenido">008</td>
-                    <td class="lista__contenido"><img src="img/ultrasonido.jpg" alt=""></td>
-                    <td class="lista__contenido">Ultrasonido</td>
-                    <td class="lista__contenido">Ecografías abdominales y cardiacas.</td>
-                    <td class="lista__contenido">$800</td>
-                    <td class="lista__contenido"><a href="form-servicio.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
-                </tr>
-
-                <tr class="lista__fila">
-                    <td class="lista__contenido">009</td>
-                    <td class="lista__contenido"><img src="img/odontologia.jpg" alt=""></td>
-                    <td class="lista__contenido">Odontología</td>
-                    <td class="lista__contenido">Limpieza dental y tratamientos bucales.</td>
-                    <td class="lista__contenido">$600</td>
-                    <td class="lista__contenido"><a href="form-servicio.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
-                </tr>
-
-                <tr class="lista__fila">
-                    <td class="lista__contenido">010</td>
-                    <td class="lista__contenido"><img src="img/terapia.jpg" alt=""></td>
-                    <td class="lista__contenido">Terapia física</td>
-                    <td class="lista__contenido">Rehabilitación y fisioterapia.</td>
-                    <td class="lista__contenido">$400</td>
-                    <td class="lista__contenido"><a href="form-servicio.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
-                </tr>
-
-                <tr class="lista__fila">
-                    <td class="lista__contenido">011</td>
-                    <td class="lista__contenido"><img src="img/emergencias.jpg" alt=""></td>
-                    <td class="lista__contenido">Emergencias</td>
-                    <td class="lista__contenido">Atención de emergencia las 24 horas.</td>
-                    <td class="lista__contenido">$1500</td>
-                    <td class="lista__contenido"><a href="form-servicio.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
-                </tr>
-              
-            </table>
-            <div class="btn-agregar">
-                <a href="form-servicio.html"> <i class="fa-solid fa-plus"></i>
-                <h3>Nuevo Servicio</h3>
+                        </picture>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">Nombre</div>
+                    <div class="col-contenido">Peluqueria</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">descripcion</div>
+                    <div class="col-contenido">Servicio completo de peluqueria.</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">precio</div>
+                    <div class="col-contenido">$300.00</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">editar</div>
+                    <div class="col-contenido"><a href="form-servicio.html"><i
+                                class="fa-solid fa-pencil pencil"></i></a></div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">Eliminar</div>
+                    <div class="col-contenido"><i class="fa-solid fa-trash trash"></i></div>
+                </div>
 
             </div>
+            <!-- Fin de la fila mobile -->
         </div>
     </div>
     <!-- Pie de pagina -->

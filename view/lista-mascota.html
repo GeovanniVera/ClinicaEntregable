@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pequeña Jungla</title>
     <script src="https://kit.fontawesome.com/482ad17f17.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/generales.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/lista-objetos.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="build/css/app.css">
 </head>
-
 <body>
     <header class="header">
         <div class="contenedor__header contenedor">
@@ -46,113 +42,98 @@
         </div>
     </header>
     <!-- Contenido Index -->
-    <div class="pagina-lista">
-        <!-- Primera Columna -->
-        <div class=" contenedor__lista contenedor">
-            <h2>Mascota</h2>
-            <table class="lista">
-                <tr class="lista__fila">
-                    <th class="lista__encabezado">ID</th>
-                    <th class="lista__encabezado">Imagen</th>
-                    <th class="lista__encabezado">Nombre</th>
-                    <th class="lista__encabezado">Tipo</th>
-                    <th class="lista__encabezado">Raza</th>
-                    <th class="lista__encabezado">sexo</th>
-                    <th class="lista__encabezado">color</th>
-                    <th class="lista__encabezado">edad</th>
-                    <th class="lista__encabezado">talla</th>
-                    <th class="lista__encabezado">peso</th>
-                    <th class="lista__encabezado" colspan="2">Operaciones</th>
+    <div class=" contenedor__lista contenedor">
+        <h2>Mascota</h2>
+        <a href="form-mascota.html" class="btn">Agregar</a>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Tipo</th>
+                    <th>Raza</th>
+                    <th>sexo</th>
+                    <th>color</th>
+                    <th>edad</th>
+                    <th>talla</th>
+                    <th>peso</th>
+                    <th colspan="2">Operaciones</th>
                 </tr>
-                <tr class="lista__fila">
-                    <td class="lista__contenido">001</td>
-                    <td class="lista__contenido"><img src="img/pugs.png" alt=""></td>
-                    <td class="lista__contenido">Manchas</td>
-                    <td class="lista__contenido">cachorro</td>
-                    <td class="lista__contenido">Pastor aleman</td>
-                    <td class="lista__contenido">Macho</td>
-                    <td class="lista__contenido">cafe</td>
-                    <td class="lista__contenido">6 Años</td>
-                    <td class="lista__contenido">Grande</td>
-                    <td class="lista__contenido">10kg</td>
-                    <td class="lista__contenido"><a href="form-mascota.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td><img src="img/pugs.png" alt=""></td>
+                    <td>Manchas</td>
+                    <td>cachorro</td>
+                    <td>Pastor aleman</td>
+                    <td>Macho</td>
+                    <td>cafe</td>
+                    <td>6 Años</td>
+                    <td>Grande</td>
+                    <td>10kg</td>
+                    <td><a href="form-mascota.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
+                    <td><i class="fa-solid fa-trash trash"></i></td>
                 </tr>
-                <tr class="lista__fila">
-                    <td class="lista__contenido">001</td>
-                    <td class="lista__contenido"><img src="img/pugs.png" alt=""></td>
-                    <td class="lista__contenido">Manchas</td>
-                    <td class="lista__contenido">cachorro</td>
-                    <td class="lista__contenido">Pastor aleman</td>
-                    <td class="lista__contenido">Macho</td>
-                    <td class="lista__contenido">cafe</td>
-                    <td class="lista__contenido">6 Años</td>
-                    <td class="lista__contenido">Grande</td>
-                    <td class="lista__contenido">10kg</td>
-                    <td class="lista__contenido"><a href="form-mascota.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
-                </tr>
-                <tr class="lista__fila">
-                    <td class="lista__contenido">001</td>
-                    <td class="lista__contenido"><img src="img/pugs.png" alt=""></td>
-                    <td class="lista__contenido">Manchas</td>
-                    <td class="lista__contenido">cachorro</td>
-                    <td class="lista__contenido">Pastor aleman</td>
-                    <td class="lista__contenido">Macho</td>
-                    <td class="lista__contenido">cafe</td>
-                    <td class="lista__contenido">6 Años</td>
-                    <td class="lista__contenido">Grande</td>
-                    <td class="lista__contenido">10kg</td>
-                    <td class="lista__contenido"><a href="form-mascota.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
-                </tr>
-                <tr class="lista__fila">
-                    <td class="lista__contenido">001</td>
-                    <td class="lista__contenido"><img src="img/pugs.png" alt=""></td>
-                    <td class="lista__contenido">Manchas</td>
-                    <td class="lista__contenido">cachorro</td>
-                    <td class="lista__contenido">Pastor aleman</td>
-                    <td class="lista__contenido">Macho</td>
-                    <td class="lista__contenido">cafe</td>
-                    <td class="lista__contenido">6 Años</td>
-                    <td class="lista__contenido">Grande</td>
-                    <td class="lista__contenido">10kg</td>
-                    <td class="lista__contenido"><a href="form-mascota.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
-                </tr>
-                <tr class="lista__fila">
-                    <td class="lista__contenido">001</td>
-                    <td class="lista__contenido"><img src="img/pugs.png" alt=""></td>
-                    <td class="lista__contenido">Manchas</td>
-                    <td class="lista__contenido">cachorro</td>
-                    <td class="lista__contenido">Pastor aleman</td>
-                    <td class="lista__contenido">Macho</td>
-                    <td class="lista__contenido">cafe</td>
-                    <td class="lista__contenido">6 Años</td>
-                    <td class="lista__contenido">Grande</td>
-                    <td class="lista__contenido">10kg</td>
-                    <td class="lista__contenido"><a href="form-mascota.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
-                </tr>
-                <tr class="lista__fila">
-                    <td class="lista__contenido">001</td>
-                    <td class="lista__contenido"><img src="img/pugs.png" alt=""></td>
-                    <td class="lista__contenido">Manchas</td>
-                    <td class="lista__contenido">cachorro</td>
-                    <td class="lista__contenido">Pastor aleman</td>
-                    <td class="lista__contenido">Macho</td>
-                    <td class="lista__contenido">cafe</td>
-                    <td class="lista__contenido">6 Años</td>
-                    <td class="lista__contenido">Grande</td>
-                    <td class="lista__contenido">10kg</td>
-                    <td class="lista__contenido"><a href="form-mascota.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
-                </tr>
-            </table>
-            <div class="btn-agregar">
-                <a href="form-mascota.html"> <i class="fa-solid fa-paw"></i>
-                <h3>Nueva Mascota</h3>
+            </tbody>
+        </table>
+        <!-- Tabla que se vera en dispositivos pequeños -->
+        <div class="table-mobile">
+            <!-- Inicio de la fila mobile -->
+            <div class="fila">
+                <div class="columna">
+                    <div class="col-header">id</div>
+                    <div class="col-contenido">1</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">imagen</div>
+                    <div class="col-contenido">
+                        <picture>
+
+                        </picture>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">Nombre</div>
+                    <div class="col-contenido">Manchas</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">tipo</div>
+                    <div class="col-contenido">cachorro</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">raza</div>
+                    <div class="col-contenido">pastor aleman</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">color</div>
+                    <div class="col-contenido">Cafe</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">edad</div>
+                    <div class="col-contenido">6 años</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">talla</div>
+                    <div class="col-contenido">Grande</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">peso</div>
+                    <div class="col-contenido">53 kg</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">editar</div>
+                    <div class="col-contenido"><a href="form-servicio.html"><i
+                                class="fa-solid fa-pencil pencil"></i></a></div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">Eliminar</div>
+                    <div class="col-contenido"><i class="fa-solid fa-trash trash"></i></div>
+                </div>
+
             </div>
+            <!-- Fin de la fila mobile -->
         </div>
     </div>
     <!-- Pie de pagina -->

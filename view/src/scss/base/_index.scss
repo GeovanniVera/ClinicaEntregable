@@ -1,0 +1,9 @@
+/*El uso de los use es organizar ocmo se van a procesar los archivos sass a css el orden es importante*/
+
+// Base
+@forward 'normalize';
+@forward 'variables' ;
+@forward 'generales';
+@forward 'utilidades';
+@forward 'mixins' ;
+// @use 'base/mixins'

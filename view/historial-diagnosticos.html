@@ -1,18 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pequeña Jungla</title>
     <script src="https://kit.fontawesome.com/482ad17f17.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/generales.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/lista-objetos.css">
-    <link rel="stylesheet" href="css/historial.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="build/css/app.css">
 </head>
-
 <body>
     <header class="header">
         <div class="contenedor__header contenedor">
@@ -48,7 +43,7 @@
     </header>
     <div class="historial">
         <div class="contenedor">
-            <h2 class="align-left p-1 t-b">Historial Clinico</h2>
+            <h2>Historial Clinico</h2>
             <nav class="nav-historial">
                 <a href="historial-vacunas.html">Vacunas</a>
                 <a href="historial-diagnosticos.html" id="red">Diagnosticos</a>
@@ -57,30 +52,67 @@
                 <a href="historial-cirugias.html">Cirugias</a>
             </nav>
             <div class="contenedor-lista ">
-                <table class="lista" >
-                    <tr class="lista__fila">
-                        <th class="lista__encabezado">ID</th>
-                        <th class="lista__encabezado">ID Mascota</th>
-                        <th class="lista__encabezado">Nombre Diagnostico</th>
-                        <th class="lista__encabezado">Fecha de diagnostico</th>
-                        <th class="lista__encabezado">Detalles</th>
-                        <th class="lista__encabezado" colspan="2">Operaciones</th>
-                    </tr>
-                    <tr class="lista__fila">
-                        <td class="lista__contenido">001</td>
-                        <td class="lista__contenido">002</td>
-                        <td class="lista__contenido">Estomacal</td>
-                        <td class="lista__contenido">30/07/2024</td>
-                        <td class="lista__contenido">dolor estomacal</td>
-                        <td class="lista__contenido"><a href="form-servicio.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                        <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
-                    </tr>
+                <a href="form-historial-diagnosticos.html">Agregar</a>
+                <table class="table" >
+                    <thead>
+                        <tr class="lista__fila">
+                            <th>ID</th>
+                            <th>ID Mascota</th>
+                            <th>Nombre Diagnostico</th>
+                            <th>Fecha de diagnostico</th>
+                            <th>Detalles</th>
+                            <th colspan="2">Operaciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="lista__fila">
+                            <td>001</td>
+                            <td>002</td>
+                            <td>Estomacal</td>
+                            <td>30/07/2024</td>
+                            <td>dolor estomacal</td>
+                            <td><a href="form-servicio.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
+                            <td><i class="fa-solid fa-trash trash"></i></td>
+                        </tr>
+                    </tbody>
                 </table>
-            </div>
-            <div class="btn-agregar">
-                <a href="form-historial-diagnosticos.html"><i class="fa-solid fa-plus"></i>
-                    <h3>Nuevo Diagnostico</h3>
-                </a>
+                <!-- Tabla que se vera en dispositivos pequeños -->
+                <div class="table-mobile">
+                    <!-- Inicio de la fila mobile -->
+                    <div class="fila">
+                        <div class="columna">
+                            <div class="col-header">id</div>
+                            <div class="col-contenido">1</div>
+                        </div>
+                        <div class="columna">
+                            <div class="col-header">id de la mascota</div>
+                            <div class="col-contenido">1</div>
+                        </div>
+                        <div class="columna">
+                            <div class="col-header">Nombre Diagnostico</div>
+                            <div class="col-contenido">Estomacal</div>
+                        </div>
+                        <div class="columna">
+                            <div class="col-header">fecha del diagnostico</div>
+                            <div class="col-contenido">30/07/2024</div>
+                        </div>
+                        <div class="columna">
+                            <div class="col-header">sintomas</div>
+                            <div class="col-contenido">Ronchas en la piel</div>
+                        </div>
+                        <div class="columna">
+                            <div class="col-header">editar</div>
+                            <div class="col-contenido"><a href="form-servicio.html"><i
+                                        class="fa-solid fa-pencil pencil"></i></a></div>
+                        </div>
+                        <div class="columna">
+                            <div class="col-header">Eliminar</div>
+                            <div class="col-contenido"><i class="fa-solid fa-trash trash"></i></div>
+                        </div>
+
+                    </div>
+                    <!-- Fin de la fila mobile -->
+                </div>
             </div>
         </div>
     </div>

@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pequeña Jungla</title>
     <script src="https://kit.fontawesome.com/482ad17f17.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/generales.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/lista-objetos.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="build/css/app.css">
 </head>
-
 <body>
     <header class="header">
         <div class="contenedor__header contenedor">
@@ -46,58 +42,78 @@
         </div>
     </header>
     <!-- Contenido Index -->
-    <div class="pagina-lista">
-        <!-- Primera Columna -->
-        <div class=" contenedor__lista contenedor">
-            <h2>Inventario</h2>
-            <table class="lista">
-                <tr class="lista__fila">
-                    <th class="lista__encabezado">ID</th>
-                    <th class="lista__encabezado">Imagen</th>
-                    <th class="lista__encabezado">Nombre</th>
-                    <th class="lista__encabezado">Costo Unitario</th>
-                    <th class="lista__encabezado">Cantidad</th>
-                    <th class="lista__encabezado">Estatus</th>
-                    <th class="lista__encabezado" colspan="2">Operaciones</th>
+    <div class=" contenedor__lista contenedor">
+        <h2>Inventario</h2>
+        <a href="form-inventario.html" class="btn">Agregar</a>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Costo Unitario</th>
+                    <th>Cantidad</th>
+                    <th>Estatus</th>
+                    <th colspan="2">Operaciones</th>
                 </tr>
-                <tr class="lista__fila">
-                    <td class="lista__contenido">001</td>
-                    <td class="lista__contenido"><img src="img/jeringa.webp" alt=""></td>
-                    <td class="lista__contenido">vacuna para la rabia</td>
-                    <td class="lista__contenido">$600</td>
-                    <td class="lista__contenido">25</td>
-                    <td class="lista__contenido">Disponible</td>
-                    <td class="lista__contenido"><a href="form-inventario.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td><img src="img/jeringa.webp" alt=""></td>
+                    <td>vacuna para la rabia</td>
+                    <td>$600</td>
+                    <td>25</td>
+                    <td>Disponible</td>
+                    <td><a href="form-inventario.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
+                    <td><i class="fa-solid fa-trash trash"></i></td>
                 </tr>
-                <tr class="lista__fila">
-                    <td class="lista__contenido">002</td>
-                    <td class="lista__contenido"><img src="img/jeringa.webp" alt=""></td>
-                    <td class="lista__contenido">vacuna para la gripe</td>
-                    <td class="lista__contenido">$400</td>
-                    <td class="lista__contenido">40</td>
-                    <td class="lista__contenido">Disponible</td>
-                    <td class="lista__contenido"><a href="form-inventario.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
-                </tr>
-                <tr class="lista__fila">
-                    <td class="lista__contenido">003</td>
-                    <td class="lista__contenido"><img src="img/jeringa.webp" alt=""></td>
-                    <td class="lista__contenido">vacuna para la roña</td>
-                    <td class="lista__contenido">$600</td>
-                    <td class="lista__contenido">6</td>
-                    <td class="lista__contenido">No disponible</td>
-                    <td class="lista__contenido"><a href="form-inventario.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
-                </tr>
-            </table>
+            </tbody>
+        </table>
+        <!-- Tabla que se vera en dispositivos pequeños -->
+        <div class="table-mobile">
+            <!-- Inicio de la fila mobile -->
+            <div class="fila">
+                <div class="columna">
+                    <div class="col-header">id</div>
+                    <div class="col-contenido">1</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">imagen</div>
+                    <div class="col-contenido">
+                        <picture>
 
-            <div class="btn-agregar">
-                <a href="form-inventario.html"> <i class="fa-solid fa-plus"></i>
-                </a>
-                <h3>Nuevo</h3>
+                        </picture>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">Nombre</div>
+                    <div class="col-contenido">Jeringa</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">costo unitario</div>
+                    <div class="col-contenido">$600</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">cantidad</div>
+                    <div class="col-contenido">25</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">estatus</div>
+                    <div class="col-contenido">Disponible</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">editar</div>
+                    <div class="col-contenido"><a href="form-servicio.html"><i
+                                class="fa-solid fa-pencil pencil"></i></a></div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">Eliminar</div>
+                    <div class="col-contenido"><i class="fa-solid fa-trash trash"></i></div>
+                </div>
 
             </div>
+            <!-- Fin de la fila mobile -->
         </div>
     </div>
     <!-- Pie de pagina -->

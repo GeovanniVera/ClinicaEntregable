@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pequeña Jungla</title>
     <script src="https://kit.fontawesome.com/482ad17f17.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/generales.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/lista-objetos.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="build/css/app.css">
 </head>
-
 <body>
     <header class="header">
         <div class="contenedor__header contenedor">
@@ -46,36 +42,62 @@
         </div>
     </header>
     <!-- Contenido Index -->
-    <div class="pagina-lista">
-        <!-- Primera Columna -->
-        <div class=" contenedor__lista contenedor">
-            <h2>Cirugias</h2>
-            <table class="lista">
-                <tr class="lista__fila">
-                    <th class="lista__encabezado">ID</th>
-                    <th class="lista__encabezado">Nombre de la Cirugia</th>
-                    <th class="lista__encabezado">Precio</th>
-                    <th class="lista__encabezado">Detalles</th>
-                    <th class="lista__encabezado" colspan="2">Operaciones</th>
+    <div class=" contenedor__lista contenedor">
+        <h2>Cirugias</h2>
+        <a href="form-cirugia.html" class="btn">Agregar</a>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre de la Cirugia</th>
+                    <th>Precio</th>
+                    <th>Detalles</th>
+                    <th colspan="2">Operaciones</th>
                 </tr>
-                <tr class="lista__fila">
-                    <td class="lista__contenido">001</td>
-                    <td class="lista__contenido">Gastrotomía</td>
-                    <td class="lista__contenido">3000</td>
-                    <td class="lista__contenido">Cirugía de intestino en perros y gatos</td>
-                    <td class="lista__contenido"><a href="form-empleado.html"><i
-                                class="fa-solid fa-pencil pencil"></i></a></td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td >001</td>
+                    <td >Gastrotomía</td>
+                    <td >3000</td>
+                    <td >Cirugía de intestino en perros y gatos</td>
+                    <td ><a href="form-empleado.html"><iclass="fa-solid fa-pencil pencil"></i></a></td>
                     <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
                 </tr>
-
-
-            </table>
-            <div class="btn-agregar">
-                <a href="form-cirugia.html"><i class="fa-solid fa-plus"></i>
-                    <h3>Nuevo Cirugia</h3>
-                </a>
+            </tbody>
+        </table>
+        <!-- Tabla que se vera en dispositivos pequeños -->
+        <div class="table-mobile">
+            <!-- Inicio de la fila mobile -->
+            <div class="fila">
+                <div class="columna">
+                    <div class="col-header">id</div>
+                    <div class="col-contenido">1</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">Nombre Cirugia</div>
+                    <div class="col-contenido">picadura de mosco</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">precio</div>
+                    <div class="col-contenido">$3000.00</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">descripcion</div>
+                    <div class="col-contenido">Cirugía de intestino en perros y gatos</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">editar</div>
+                    <div class="col-contenido"><a href="form-servicio.html"><i
+                                class="fa-solid fa-pencil pencil"></i></a></div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">Eliminar</div>
+                    <div class="col-contenido"><i class="fa-solid fa-trash trash"></i></div>
+                </div>
 
             </div>
+            <!-- Fin de la fila mobile -->
         </div>
     </div>
     <!-- Pie de pagina -->
