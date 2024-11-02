@@ -373,6 +373,28 @@ un mixin puede tener parametros para hacer mas funcional el mixin
 .table {
   width: 100%;
   border-collapse: collapse;
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
+}
+@media only screen and (max-width: 575.98px) {
+  .table {
+    display: none;
+  }
+}
+@media only screen and (min-width: 575.99px) and (max-width: 767.98px) {
+  .table {
+    display: none;
+  }
 }
 .table tr th,
 .table tr td {
@@ -384,4 +406,64 @@ un mixin puede tener parametros para hacer mas funcional el mixin
   background-color: #781b1b;
   color: #fff;
   text-transform: uppercase;
+}
+.table tbody tr:nth-of-type(even) {
+  background-color: #979797;
+  color: #fff;
+}
+.table tbody tr:nth-of-type(even) a {
+  color: #fff;
+}
+.table tbody tr td {
+  text-align: center;
+}
+
+.table-mobile {
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
+}
+@media only screen and (min-width: 767.99px) and (max-width: 1199.97px) {
+  .table-mobile {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1199.98px) {
+  .table-mobile {
+    display: none;
+  }
+}
+.table-mobile .fila .columna {
+  display: flex;
+}
+.table-mobile .fila .columna .col-header, .table-mobile .fila .columna .col-contenido {
+  border: solid 1px #000;
+  border-bottom: none;
+  padding: 1rem;
+  text-align: center;
+}
+.table-mobile .fila .columna .col-header {
+  text-transform: uppercase;
+  width: 40%;
+  background-color: #781b1b;
+  color: #fff;
+}
+.table-mobile .fila .columna .col-contenido {
+  width: 60%;
+}
+.table-mobile .fila:nth-of-type(even) {
+  background-color: #979797;
+  color: #fff;
+}
+.table-mobile .fila:nth-of-type(even) .col-contenido a {
+  color: #fff;
 }
