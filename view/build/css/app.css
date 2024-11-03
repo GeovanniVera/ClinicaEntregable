@@ -370,6 +370,55 @@ un mixin puede tener parametros para hacer mas funcional el mixin
 /*Este mixin se utiliza para centrar un div*/
 /*Este mixin es para agregar pequeñas transiciones*/
 /*Este Mixin es para generar un botono*/
+.formulario input {
+  padding: 1rem;
+  width: 100%;
+}
+
+.f1 .col-1 {
+  width: 90%;
+  margin: 0 auto 50px auto;
+}
+.f1 .col-1 input {
+  padding: 1rem 2rem;
+}
+.f1 .col-1 #aceptar {
+  margin-bottom: 50px;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #114d3b;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.f1 .col-1 #aceptar:hover {
+  background-color: rgb(7.7765957447, 35.2234042553, 26.9893617021);
+}
+.f1 .col-1 #cancelar {
+  margin-bottom: 50px;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  color: #000;
+  background-color: #781b1b;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.f1 .col-1 #cancelar:hover {
+  background-color: rgb(78.3673469388, 17.6326530612, 17.6326530612);
+}
+.f1 .col-2 {
+  margin: 0 auto 50px auto;
+  width: 90%;
+}
+
 .table {
   width: 100%;
   border-collapse: collapse;
