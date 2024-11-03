@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pequeña Jungla</title>
     <script src="https://kit.fontawesome.com/482ad17f17.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/build/css/app.css">
+    <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
     <header class="header">
@@ -52,6 +52,7 @@
                 <a href="historial-cirugias.html">Cirugias</a>
             </nav>
             <div class="contenedor-lista ">
+                <a href="form-historial-diagnosticos.html" class="btn">Agregar</a>
                 <table class="table" >
                     <thead>
                         <tr class="lista__fila">
@@ -75,8 +76,44 @@
                         </tr>
                     </tbody>
                 </table>
+                <!-- Tabla que se vera en dispositivos pequeños -->
+                <div class="table-mobile">
+                    <!-- Inicio de la fila mobile -->
+                    <div class="fila">
+                        <div class="columna">
+                            <div class="col-header">id</div>
+                            <div class="col-contenido">1</div>
+                        </div>
+                        <div class="columna">
+                            <div class="col-header">id de la mascota</div>
+                            <div class="col-contenido">1</div>
+                        </div>
+                        <div class="columna">
+                            <div class="col-header">Nombre Diagnostico</div>
+                            <div class="col-contenido">Estomacal</div>
+                        </div>
+                        <div class="columna">
+                            <div class="col-header">fecha del diagnostico</div>
+                            <div class="col-contenido">30/07/2024</div>
+                        </div>
+                        <div class="columna">
+                            <div class="col-header">sintomas</div>
+                            <div class="col-contenido">Ronchas en la piel</div>
+                        </div>
+                        <div class="columna">
+                            <div class="col-header">editar</div>
+                            <div class="col-contenido"><a href="form-servicio.html"><i
+                                        class="fa-solid fa-pencil pencil"></i></a></div>
+                        </div>
+                        <div class="columna">
+                            <div class="col-header">Eliminar</div>
+                            <div class="col-contenido"><i class="fa-solid fa-trash trash"></i></div>
+                        </div>
+
+                    </div>
+                    <!-- Fin de la fila mobile -->
+                </div>
             </div>
-            <a href="form-historial-diagnosticos.html">Agregar</a>
         </div>
     </div>
     <!-- Pie de pagina -->

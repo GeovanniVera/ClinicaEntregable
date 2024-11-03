@@ -1,10 +1,21 @@
 @use 'base/variables' as v;
-
+@use 'base/mixins' as m;
 .table {
     width: 100%;
     border-collapse: collapse;
 
+    @include m.responsive(smartphone-portrait){
+        display: none;
+    }
+    @include m.responsive(smartphone-landscape){
+        display: none;
+    }
+    
+    @include m.responsive(tablet){
+        display: none;
+    }
     tr {
+
 
         th,
         td {
@@ -22,4 +33,60 @@
             text-transform: uppercase;
         }
     }
+    tbody{
+        tr:nth-of-type(even){
+            background-color: v.$gris;
+            color: v.$blanco;
+            a{
+                color: v.$blanco;
+            }
+        }
+        tr{
+            td{
+                text-align: center;
+            }
+        }
+    }
+}
+
+.table-mobile{
+    
+    @include m.responsive(laptop){
+        display: none;
+    }
+    .fila{
+        .columna{
+            display: flex;
+            .col-header,.col-contenido{
+                border: solid 1px v.$negro;
+                border-bottom: none;
+                padding: 1rem;
+                text-align: center;
+            }
+            .col-header{
+                text-transform: uppercase;
+                width: 40%;
+                background-color: v.$rojo;
+                color: v.$blanco;
+            }
+
+            .col-contenido{
+                width: 60%;
+            }
+        }
+        &:nth-of-type(even){
+            background-color: v.$gris;
+            color: v.$blanco;
+            .col-contenido{
+                a{
+                    color: v.$blanco;
+                }
+            }
+        }
+    }
+}
+
+.btn{
+    @include m.button(inline-block,v.$verde,v.$blanco,10px 20px,0px);
+    margin: 10px 0;
 }
