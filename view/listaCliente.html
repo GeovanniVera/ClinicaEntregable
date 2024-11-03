@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pequeña Jungla</title>
     <script src="https://kit.fontawesome.com/482ad17f17.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/build/css/app.css">
+    <link rel="stylesheet" href="build/css/app.css">
 </head>
 
 <body>
@@ -45,6 +45,7 @@
     <!-- Contenido Index -->
     <div class=" contenedor__lista contenedor">
         <h2>Cliente</h2>
+        <a href="form-cliente.html" class="btn">Agregar</a>
         <table class="table"> 
             <thead>
                 <tr>
@@ -76,7 +77,58 @@
                 </tr>
             </tbody>
         </table>
-        <a href="form-cliente.html" class="btn">Agregar</a>
+        <div class="table-mobile">
+            <!-- Inicio de la fila mobile -->
+            <div class="fila">
+                <div class="columna">
+                    <div class="col-header">id</div>
+                    <div class="col-contenido">1</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">Nombre</div>
+                    <div class="col-contenido">Luis</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">Apellido paterno</div>
+                    <div class="col-contenido">Enriquez</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">Apellido materno</div>
+                    <div class="col-contenido">Gonzales</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">telefono movil</div>
+                    <div class="col-contenido">5522606580</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">telefono fijo</div>
+                    <div class="col-contenido">5522606580</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">correo</div>
+                    <div class="col-contenido">cliente@cliente.com</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">direccion</div>
+                    <div class="col-contenido">pablo garcia 648</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">estatus</div>
+                    <div class="col-contenido">Activo</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">editar</div>
+                    <div class="col-contenido"><a href="form-servicio.html"><i
+                                class="fa-solid fa-pencil pencil"></i></a></div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">Eliminar</div>
+                    <div class="col-contenido"><i class="fa-solid fa-trash trash"></i></div>
+                </div>
+
+            </div>
+            <!-- Fin de la fila mobile -->
+        </div>
     </div>
     <!-- Pie de pagina -->
     <footer class="footer">

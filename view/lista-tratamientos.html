@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pequeña Jungla</title>
     <script src="https://kit.fontawesome.com/482ad17f17.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/build/css/app.css">
+    <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
     <header class="header">
@@ -44,6 +44,7 @@
     <!-- Contenido Index -->
     <div class=" contenedor__lista contenedor">
         <h2>Tratamientos</h2>
+        <a href="form-tratamiento.html" class="btn">Agregar</a>
         <table class="table">
             <thead>
                 <tr>
@@ -65,7 +66,38 @@
                 </tr>
             </tbody>
         </table>
-        <a href="form-tratamiento.html" class="btn">Agregar</a>
+        <div class="table-mobile">
+            <!-- Inicio de la fila mobile -->
+            <div class="fila">
+                <div class="columna">
+                    <div class="col-header">id</div>
+                    <div class="col-contenido">1</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">Nombre</div>
+                    <div class="col-contenido">Emulcion</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">descripcion</div>
+                    <div class="col-contenido">Tomar Emulcion 2 veces a la semana</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">dias de duracion</div>
+                    <div class="col-contenido">5</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">editar</div>
+                    <div class="col-contenido"><a href="form-servicio.html"><i
+                                class="fa-solid fa-pencil pencil"></i></a></div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">Eliminar</div>
+                    <div class="col-contenido"><i class="fa-solid fa-trash trash"></i></div>
+                </div>
+
+            </div>
+            <!-- Fin de la fila mobile -->
+        </div>
     </div>
     <!-- Pie de pagina -->
     <footer class="footer">

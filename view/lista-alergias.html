@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pequeña Jungla</title>
     <script src="https://kit.fontawesome.com/482ad17f17.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/build/css/app.css">
+    <link rel="stylesheet" href="build/css/app.css">
 </head>
+
 <body>
     <header class="header">
         <div class="contenedor__header contenedor">
@@ -26,17 +27,25 @@
                 <a href="listaCliente.html" class="header__enlace"><i class="fa-solid fa-person"></i> Cliente</a>
                 <a href="lista-empleado.html" class="header__enlace"><i class="fa-solid fa-user-nurse"></i> Empleado</a>
                 <a href="lista-usuario.html" class="header__enlace"><i class="fa-solid fa-user"></i> Usuario</a>
-                <a href="lista-inventario.html" class="header__enlace"><i class="fa-solid fa-box-archive"></i>Inventario</a>
+                <a href="lista-inventario.html" class="header__enlace"><i
+                        class="fa-solid fa-box-archive"></i>Inventario</a>
                 <a href="lista-insumos.html" class="header__enlace"><i class="fa-solid fa-bottle-water"></i> Insumo</a>
                 <a href="lista-vacunas.html" class="header__enlace"><i class="fa-solid fa-syringe"></i> Vacunas</a>
-                <a href="lista-diagnosticos.html" class="header__enlace"><i class="fa-solid fa-stethoscope"></i>Diagnosticos</a>
-                <a href="lista-tratamientos.html" class="header__enlace"><i class="fa-solid fa-tablets"></i>Tratamientos</a>
-                <a href="lista-alergias.html" class="header__enlace red"><i class="fa-solid fa-box-tissue"></i> Alergias</a>
+                <a href="lista-diagnosticos.html" class="header__enlace"><i
+                        class="fa-solid fa-stethoscope"></i>Diagnosticos</a>
+                <a href="lista-tratamientos.html" class="header__enlace"><i
+                        class="fa-solid fa-tablets"></i>Tratamientos</a>
+                <a href="lista-alergias.html" class="header__enlace red"><i class="fa-solid fa-box-tissue"></i>
+                    Alergias</a>
                 <a href="lista-cirugias.html" class="header__enlace"><i class="fa-solid fa-mask-face"></i> Cirugias</a>
-                <a href="historial-vacunas.html" class="header__enlace"><i class="fa-solid fa-sheet-plastic"></i>Historial Clinico</a>
-                <a href="generar-contrato-medicina.html" class="header__enlace"><i class="fa-solid fa-file-contract"></i> Contrato </a>
-                <a href="programar-cita.html" class="header__enlace"><i class="fa-solid fa-thumbtack"></i>Programar Cita</a>
-                <a href="generar-comprobantepago.html" class="header__enlace"><i class="fa-solid fa-wallet"></i>Comprobante de Pago</a>
+                <a href="historial-vacunas.html" class="header__enlace"><i
+                        class="fa-solid fa-sheet-plastic"></i>Historial Clinico</a>
+                <a href="generar-contrato-medicina.html" class="header__enlace"><i
+                        class="fa-solid fa-file-contract"></i> Contrato </a>
+                <a href="programar-cita.html" class="header__enlace"><i class="fa-solid fa-thumbtack"></i>Programar
+                    Cita</a>
+                <a href="generar-comprobantepago.html" class="header__enlace"><i
+                        class="fa-solid fa-wallet"></i>Comprobante de Pago</a>
                 <a href="index.html" class="header__enlace"><i class="fa-solid fa-user-xmark"></i> Cerrar sesion</a>
             </nav>
         </div>
@@ -44,6 +53,7 @@
     <!-- Contenido Index -->
     <div class=" contenedor__lista contenedor">
         <h2>Alergias</h2>
+        <a href="form-alergia.html" class="btn"> Agregar</a>
         <table class="table">
             <thead>
                 <tr>
@@ -55,42 +65,70 @@
             </thead>
             <tbody>
                 <tr>
-                    <td >001</td>
-                    <td >Picadura de mosco</td>
-                    <td >Deilidad General <br> Hinchazón</td>
-                    <td ><a href="form-empleado.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
-                    <td ><i class="fa-solid fa-trash trash"></i></td>
+                    <td>001</td>
+                    <td>Picadura de mosco</td>
+                    <td>Debilidad General</td>
+                    <td><a href="form-empleado.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
+                    <td><i class="fa-solid fa-trash trash"></i></td>
                 </tr>
             </tbody>
         </table>
-        <a href="form-alergia.html" class="btn"> Agregar</a>
-    </div>
-    <!-- Pie de pagina -->
-    <footer class="footer">
-        <div class="contenedor__footer contenedor">
-            <div class="footer__dir">
-                <h3 class="footer__dir__titulo">Direccion</h3>
-                <p class="footer__parrafo">
-                    Calle, Gral. Juan Manuel Torrea 40 bis, esquina José María, Iztapalapa, 09100 Parras de la Fuente,
-                    CDMX
-                </p>
-                <h3 class="footer__dir__titulo">Contacto</h3>
-                <p class="footer__parrafo centrar">
-                    <i class="fa-solid fa-phone"></i> 5529459032
-                </p>
+        <!-- Tabla que se vera en dispositivos pequeños -->
+        <div class="table-mobile">
+            <!-- Inicio de la fila mobile -->
+            <div class="fila">
+                <div class="columna">
+                    <div class="col-header">id</div>
+                    <div class="col-contenido">1</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">Nombre</div>
+                    <div class="col-contenido">picadura de mosco</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">sintomas</div>
+                    <div class="col-contenido">Debilidad General</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">editar</div>
+                    <div class="col-contenido"><a href="form-servicio.html"><i
+                                class="fa-solid fa-pencil pencil"></i></a></div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">Eliminar</div>
+                    <div class="col-contenido"><i class="fa-solid fa-trash trash"></i></div>
+                </div>
 
             </div>
-            <div class="footer__social">
-                <h3 class="footer__social__titulo">Redes Sociales</h3>
-                <div class="footer__social__enlaces">
-                    <a href="#" class="footer__enlace"><i class="fa-brands fa-facebook"></i>Facebook</a>
-                    <a href="#" class="footer__enlace"><i class="fa-brands fa-whatsapp"></i>whatsapp</a>
-                    <a href="#" class="footer__enlace"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            <!-- Fin de la fila mobile -->
+        </div>
+        <!-- Pie de pagina -->
+        <footer class="footer">
+            <div class="contenedor__footer contenedor">
+                <div class="footer__dir">
+                    <h3 class="footer__dir__titulo">Direccion</h3>
+                    <p class="footer__parrafo">
+                        Calle, Gral. Juan Manuel Torrea 40 bis, esquina José María, Iztapalapa, 09100 Parras de la
+                        Fuente,
+                        CDMX
+                    </p>
+                    <h3 class="footer__dir__titulo">Contacto</h3>
+                    <p class="footer__parrafo centrar">
+                        <i class="fa-solid fa-phone"></i> 5529459032
+                    </p>
+
+                </div>
+                <div class="footer__social">
+                    <h3 class="footer__social__titulo">Redes Sociales</h3>
+                    <div class="footer__social__enlaces">
+                        <a href="#" class="footer__enlace"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                        <a href="#" class="footer__enlace"><i class="fa-brands fa-whatsapp"></i>whatsapp</a>
+                        <a href="#" class="footer__enlace"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <script src="js/app.js"></script>
+        </footer>
+        <script src="js/app.js"></script>
 </body>
 
 </html>
