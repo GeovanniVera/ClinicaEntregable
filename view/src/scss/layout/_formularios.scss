@@ -16,9 +16,9 @@
 .f1{
     @include m.responsive(laptop){
         display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+        align-items: center;
+        justify-content: center;
+        gap: 20PX;
     }
     
     .col-1{
@@ -26,6 +26,11 @@
         flex-direction: column;
         width: 100%;
         margin: 0 auto 50px auto;
+        @include m.responsive(laptop){
+            
+
+        }
+        
 
         
 
