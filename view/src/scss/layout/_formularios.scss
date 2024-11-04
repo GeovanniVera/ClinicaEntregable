@@ -19,12 +19,12 @@
         }
         #aceptar{
             margin-bottom: 50px;
-            @include m.button-styles(v.$verde,v.$blanco,1rem 2rem) 
+            @include m.button(v.$verde,v.$blanco,1rem 2rem) 
             
         }
         #cancelar{
             margin-bottom: 50px;
-            @include m.button-styles(v.$rojo,v.$negro,1rem 2rem)
+            @include m.button(v.$rojo,v.$negro,1rem 2rem)
         }
     }
     .col-2{
