@@ -370,65 +370,6 @@ un mixin puede tener parametros para hacer mas funcional el mixin
 /*Este mixin se utiliza para centrar un div*/
 /*Este mixin es para agregar pequeñas transiciones*/
 /*Este Mixin es para generar un botono*/
-.table {
-  width: 100%;
-  border-collapse: collapse;
-  /*
-      breakpoints are viewport arbitrary values,
-      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
-      the breakpoints I used were inspired by Bootstrap =>
-      https://getbootstrap.com/docs/5.0/layout/breakpoints/
-  */
-  /*
-      breakpoints are viewport arbitrary values,
-      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
-      the breakpoints I used were inspired by Bootstrap =>
-      https://getbootstrap.com/docs/5.0/layout/breakpoints/
-  */
-  /*
-      breakpoints are viewport arbitrary values,
-      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
-      the breakpoints I used were inspired by Bootstrap =>
-      https://getbootstrap.com/docs/5.0/layout/breakpoints/
-  */
-}
-@media only screen and (max-width: 575.98px) {
-  .table {
-    display: none;
-  }
-}
-@media only screen and (min-width: 575.99px) and (max-width: 767.98px) {
-  .table {
-    display: none;
-  }
-}
-@media only screen and (min-width: 767.99px) and (max-width: 1199.97px) {
-  .table {
-    display: none;
-  }
-}
-.table tr th,
-.table tr td {
-  padding: 10px;
-  border-collapse: collapse;
-  border: 1px solid #000;
-}
-.table thead tr {
-  background-color: #781b1b;
-  color: #fff;
-  text-transform: uppercase;
-}
-.table tbody tr:nth-of-type(even) {
-  background-color: #979797;
-  color: #fff;
-}
-.table tbody tr:nth-of-type(even) a {
-  color: #fff;
-}
-.table tbody tr td {
-  text-align: center;
-}
-
 .table-mobile {
   /*
       breakpoints are viewport arbitrary values,
@@ -454,8 +395,9 @@ un mixin puede tener parametros para hacer mas funcional el mixin
 .table-mobile .fila .columna .col-header {
   text-transform: uppercase;
   width: 40%;
-  background-color: #781b1b;
+  background-color: #000;
   color: #fff;
+  font-weight: bold;
 }
 .table-mobile .fila .columna .col-contenido {
   width: 60%;
@@ -468,21 +410,38 @@ un mixin puede tener parametros para hacer mas funcional el mixin
   color: #fff;
 }
 
-.btn {
-  padding: 10px 20px;
-  display: inline-block;
-  border: none;
-  border-radius: 0px;
-  color: #fff;
-  background-color: #114d3b;
-  cursor: pointer;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-  margin: 10px 0;
+.table-hidden {
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
 }
-.btn:hover {
-  background-color: rgb(7.7765957447, 35.2234042553, 26.9893617021);
-  color: #fff;
+@media only screen and (max-width: 575.98px) {
+  .table-hidden {
+    display: none;
+  }
+}
+@media only screen and (min-width: 575.99px) and (max-width: 767.98px) {
+  .table-hidden {
+    display: none;
+  }
+}
+@media only screen and (min-width: 767.99px) and (max-width: 1199.97px) {
+  .table-hidden {
+    display: none;
+  }
 }

@@ -7,48 +7,18 @@
     <title>Mi Pequeña Jungla</title>
     <script src="https://kit.fontawesome.com/482ad17f17.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="build/css/app.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
 </head>
 
 <body>
-    <header class="header">
-        <div class="contenedor__header contenedor">
-            <div class="header__info">
-                <a href="perfil_usuario.html" id="logo_enlace"><img src="img/LOGOJUNGLAV2.png" alt="logo de empresa"
-                        class="header__logo"></a>
-                <h2 class="header__titulo">software de gestion veterinaria</h2>
-            </div>
-            <div class="contenedor__us">
-                <i class="fa-solid fa-user"></i>
-                <p>Usuario</p>
-            </div>
-            <nav class="header__nav">
-                <a href="lista-servicios.html" class="header__enlace"><i class="fa-solid fa-shield-dog"></i> Servicio</a>
-                <a href="lista-mascota.html" class="header__enlace"><i class="fa-solid fa-dog"></i> Mascota</a>
-                <a href="listaCliente.html" class="header__enlace red"><i class="fa-solid fa-person"></i> Cliente</a>
-                <a href="lista-empleado.html" class="header__enlace"><i class="fa-solid fa-user-nurse"></i> Empleado</a>
-                <a href="lista-usuario.html" class="header__enlace"><i class="fa-solid fa-user"></i> Usuario</a>
-                <a href="lista-inventario.html" class="header__enlace"><i class="fa-solid fa-box-archive"></i> Inventario</a>
-                <a href="lista-insumos.html" class="header__enlace"><i class="fa-solid fa-bottle-water"></i> Insumo</a>
-                <a href="lista-vacunas.html" class="header__enlace"><i class="fa-solid fa-syringe"></i> Vacunas</a>
-                <a href="lista-diagnosticos.html" class="header__enlace"><i class="fa-solid fa-stethoscope"></i> Diagnosticos</a>
-                <a href="lista-tratamientos.html" class="header__enlace"><i class="fa-solid fa-tablets"></i> Tratamientos</a>
-                <a href="lista-alergias.html" class="header__enlace"><i class="fa-solid fa-box-tissue"></i> Alergias</a>
-                <a href="lista-cirugias.html" class="header__enlace"><i class="fa-solid fa-mask-face"></i> Cirugias</a>
-                <a href="historial-vacunas.html" class="header__enlace"><i class="fa-solid fa-sheet-plastic"></i> Historial Clinico</a>
-                <a href="generar-contrato-medicina.html" class="header__enlace"><i class="fa-solid fa-file-contract"></i> Contrato </a>
-                <a href="programar-cita.html" class="header__enlace"><i class="fa-solid fa-thumbtack"></i>Programar Cita</a>
-                <a href="generar-comprobantepago.html" class="header__enlace"><i class="fa-solid fa-wallet"></i>Comprobante de Pago</a>
-                <a href="index.html" class="header__enlace"><i class="fa-solid fa-user-xmark"></i> Cerrar sesion</a>
-            </nav>
-        </div>
-    </header>
     <!-- Contenido Index -->
-    <div class=" contenedor__lista contenedor">
+    <div class=" contenedor__lista container">
         <h2>Cliente</h2>
-        <a href="form-cliente.html" class="btn">Agregar</a>
-        <table class="table"> 
+        <a href="form-cliente.html" class="btn btn-success mb-3">Agregar</a>
+        <table class="table table-striped table-hover table-hidden"> 
             <thead>
-                <tr>
+                <tr class="table-dark">
                     <th>ID</th>
                     <th>Nombre</th>
                     <th>Apellido Paterno</th>
@@ -61,7 +31,20 @@
                     <th colspan="2">Operaciones</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="table-group-divider">
+                <tr>
+                    <td>001</td>
+                    <td>Luis</td>
+                    <td>Enriquez</td>
+                    <td>gonzales</td>
+                    <td>5522303580</td>
+                    <td>57452383</td>
+                    <td>LuiEnr@gmail.com</td>
+                    <td>Pablo Garcia 648, 09100</td>
+                    <td>Activo</td>
+                    <td><a href="form-cliente.html"><i class="fa-solid fa-pencil pencil"></i></a></td>
+                    <td><i class="fa-solid fa-trash trash"></i></td>
+                </tr>
                 <tr>
                     <td>001</td>
                     <td>Luis</td>
