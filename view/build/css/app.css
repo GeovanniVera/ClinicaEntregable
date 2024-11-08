@@ -480,79 +480,8 @@ body {
     display: none;
   }
 }
-.formulario h3 {
-  margin: 40px 0;
-  text-align: center;
+input[type=submit] {
   text-transform: uppercase;
-}
-
-.f1 {
-  /*
-      breakpoints are viewport arbitrary values,
-      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
-      the breakpoints I used were inspired by Bootstrap =>
-      https://getbootstrap.com/docs/5.0/layout/breakpoints/
-  */
-}
-@media only screen and (min-width: 1199.98px) {
-  .f1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20PX;
-  }
-}
-.f1 .col-1 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 0 auto 50px auto;
-  /*
-      breakpoints are viewport arbitrary values,
-      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
-      the breakpoints I used were inspired by Bootstrap =>
-      https://getbootstrap.com/docs/5.0/layout/breakpoints/
-  */
-}
-.f1 .col-1 input,
-.f1 .col-1 select {
-  padding: 0.7rem 1rem;
-}
-.f1 .col-1 #aceptar {
-  margin-bottom: 50px;
-  padding: 1rem 2rem;
-  display: inline-block;
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-  background-color: #114d3b;
-  cursor: pointer;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-.f1 .col-1 #aceptar:hover {
-  background-color: rgb(7.7765957447, 35.2234042553, 26.9893617021);
-  color: #fff;
-}
-.f1 .col-1 #cancelar {
-  margin-bottom: 50px;
-  padding: 1rem 2rem;
-  display: inline-block;
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-  background-color: #781b1b;
-  cursor: pointer;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-.f1 .col-1 #cancelar:hover {
-  background-color: rgb(78.3673469388, 17.6326530612, 17.6326530612);
-  color: #fff;
 }
 
 .table {
