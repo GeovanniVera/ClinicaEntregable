@@ -5,106 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pequeña Jungla</title>
-    <script src="https://kit.fontawesome.com/482ad17f17.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/482ad17row7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="contenedor__header contenedor">
-            <div class="header__info">
-                <a href="perfil_usuario.html" id="logo_enlace"><img src="img/LOGOJUNGLAV2.png" alt="logo de empresa"
-                        class="header__logo"></a>
-                <h2 class="header__titulo">software de gestion veterinaria</h2>
-            </div>
-            <div class="contenedor__us">
-                <i class="fa-solid fa-user"></i>
-                <p>Usuario</p>
-            </div>
-            <nav class="header__nav">
-                <a href="lista-servicios.html" class="header__enlace"><i class="fa-solid fa-shield-dog"></i> Servicio</a>
-                <a href="lista-mascota.html" class="header__enlace"><i class="fa-solid fa-dog"></i> Mascota</a>
-                <a href="listaCliente.html" class="header__enlace"><i class="fa-solid fa-person"></i> Cliente</a>
-                <a href="lista-empleado.html" class="header__enlace"><i class="fa-solid fa-user-nurse"></i> Empleado</a>
-                <a href="lista-usuario.html" class="header__enlace"><i class="fa-solid fa-user"></i> Usuario</a>
-                <a href="lista-inventario.html" class="header__enlace"><i class="fa-solid fa-box-archive"></i> Inventario</a>
-                <a href="lista-insumos.html" class="header__enlace"><i class="fa-solid fa-bottle-water"></i> Insumo</a>
-                <a href="lista-vacunas.html" class="header__enlace"><i class="fa-solid fa-syringe"></i> Vacunas</a>
-                <a href="lista-diagnosticos.html" class="header__enlace"><i class="fa-solid fa-stethoscope"></i> Diagnosticos</a>
-                <a href="lista-tratamientos.html" class="header__enlace red"><i class="fa-solid fa-tablets"></i> Tratamientos</a>
-                <a href="lista-alergias.html" class="header__enlace"><i class="fa-solid fa-box-tissue"></i> Alergias</a>
-                <a href="lista-cirugias.html" class="header__enlace"><i class="fa-solid fa-mask-face"></i> Cirugias</a>
-                <a href="historial-vacunas.html" class="header__enlace"><i class="fa-solid fa-sheet-plastic"></i> Historial Clinico</a>
-                <a href="generar-contrato-medicina.html" class="header__enlace"><i class="fa-solid fa-file-contract"></i> Contrato </a>
-                <a href="programar-cita.html" class="header__enlace"><i class="fa-solid fa-thumbtack"></i>Programar Cita</a>
-                <a href="generar-comprobantepago.html" class="header__enlace"><i class="fa-solid fa-wallet"></i>Comprobante de Pago</a>
-                <a href="index.html" class="header__enlace"><i class="fa-solid fa-user-xmark"></i> Cerrar sesion</a>
-            </nav>
-        </div>
-    </header>
-    <!-- Contenido Formulario Usuario -->
-    <div class="contenido-formulario">
-        <div class="contenedor contenedor-formulario">
-            <form action="lista-tratamientos.html" class="formulario">
+    <!-- Contenido container Usuario -->
+    <div class="contenido-container">
+        <div class="container container-container">
+            <form action="lista-tratamientos.html" class="container">
                 <h3>Registrar Tratamiento</h3>
                 <!-- Fila 1 -->
-                <div class="f1">
+                <div class="row">
                     <!-- columna 1 -->
-                    <div class="col-1">
+                    <div class="col-12 col-md-6 my-3">
                         <label>Nombre del Tratamiento</label>
-                        <input type="text" required>
+                        <input type="text" required class="form-control">
                     </div>
                     <!-- Columna 2 -->
-                    <div class="col-1">
+                    <div class="col-12 col-md-6 my-3">
                         <label for="">Descripcion</label>
-                        <input type="text" required>
+                        <input type="text" required class="form-control">
                     </div>
                 </div>
-                <!-- Fin F1 -->
+                <!-- Fin row -->
                 <!-- F2 -->
-                <div class="f1">
+                <div class="row">
                     <!-- columna 1 -->
-                    <div class="col-1">
+                    <div class="col-12 col-md-6 my-3">
                         <label>Duracion</label>
-                        <input type="number" required>
+                        <input type="number" required class="form-control">
                     </div>
                 </div>
-                <div class="f1">
-                    <!-- Columna 1 -->
-                    <div class="col-1">
-                        <input type="submit" value="aceptar" id="aceptar">
-                        <input type="submit" value="Cancelar" id="cancelar">
+                <div class="row">
+                    <div class="col-12 col-md-3 col-lg-2 my-3">
+                        <input type="submit" value="aceptar" id="aceptar" class="form-control btn btn-success text-uppercase">
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-2 my-3">
+                        <button  id="cancelar" class="form-control btn btn-danger text-uppercase">Cancelar</button>
                     </div>
                 </div>
             </form>
         </div>
     </div>
-    <!-- Fin Formulario Usuario -->
-    <!-- Pie de pagina -->
-    <footer class="footer">
-        <div class="contenedor__footer contenedor">
-            <div class="footer__dir">
-                <h3 class="footer__dir__titulo">Direccion</h3>
-                <p class="footer__parrafo">
-                    Calle, Gral. Juan Manuel Torrea 40 bis, esquina José María, Iztapalapa, 09100 Parras de la Fuente,
-                    CDMX
-                </p>
-                <h3 class="footer__dir__titulo">Contacto</h3>
-                <p class="footer__parrafo centrar">
-                    <i class="fa-solid fa-phone"></i> 5529459032
-                </p>
-
-            </div>
-            <div class="footer__social">
-                <h3 class="footer__social__titulo">Redes Sociales</h3>
-                <div class="footer__social__enlaces">
-                    <a href="#" class="footer__enlace"><i class="fa-brands fa-facebook"></i>Facebook</a>
-                    <a href="#" class="footer__enlace"><i class="fa-brands fa-whatsapp"></i>whatsapp</a>
-                    <a href="#" class="footer__enlace"><i class="fa-brands fa-instagram"></i>Instagram</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Fin container Usuario -->
 </body>
 
 </html>
