@@ -370,250 +370,6 @@ un mixin puede tener parametros para hacer mas funcional el mixin
 /*Este mixin se utiliza para centrar un div*/
 /*Este mixin es para agregar pequeñas transiciones*/
 /*Este Mixin es para generar un botono*/
-body {
-  font-size: 1rem;
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-}
-
-.contenedor {
-  width: 95%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Sesión */
-.pagina-sesion {
-  background-color: #114d3b;
-  padding: 5rem 0;
-  min-height: calc(100vh - 300px);
-}
-
-.contenedor__sesion {
-  display: flex;
-  flex-direction: row-reverse;
-  background-color: #fff;
-  border-radius: 1.2rem 0;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-}
-
-/* Formulario */
-.sesion__right {
-  width: 50%;
-  padding: 4rem;
-  background-color: #781b1b;
-}
-
-.sesion__formulario {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.sesion__formulario__titulo {
-  color: #fff;
-  text-align: center;
-  font-size: 1.8rem;
-  margin: 2rem 0 1rem 0;
-}
-
-.sesion__formulario__input {
-  text-align: center;
-  padding: 1rem;
-  margin: 1rem 2rem;
-  border: none;
-  border-radius: 1.5rem;
-  font-size: 1.2rem;
-}
-
-.sesion__formulario__btn {
-  background-color: #fff;
-  color: #000;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.sesion__formulario__btn:hover {
-  background-color: #114d3b;
-  color: #fff;
-}
-
-/* Imagen */
-.sesion__left {
-  width: 50%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  padding: 2rem;
-}
-
-.left-capa {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #fff;
-}
-
-.sesion__logo {
-  width: 80%;
-  height: auto;
-  position: relative;
-  z-index: 1;
-}
-
-@media (max-width: 768px) {
-  .contenedor__sesion {
-    flex-direction: column;
-  }
-  .sesion__right {
-    padding: 1rem;
-    width: 100%;
-  }
-  .sesion__left {
-    width: 0;
-    display: none;
-  }
-}
-.formulario h3 {
-  margin: 40px 0;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.f1 {
-  /*
-      breakpoints are viewport arbitrary values,
-      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
-      the breakpoints I used were inspired by Bootstrap =>
-      https://getbootstrap.com/docs/5.0/layout/breakpoints/
-  */
-}
-@media only screen and (min-width: 1199.98px) {
-  .f1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20PX;
-  }
-}
-.f1 .col-1 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 0 auto 50px auto;
-  /*
-      breakpoints are viewport arbitrary values,
-      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
-      the breakpoints I used were inspired by Bootstrap =>
-      https://getbootstrap.com/docs/5.0/layout/breakpoints/
-  */
-}
-.f1 .col-1 input,
-.f1 .col-1 select {
-  padding: 0.7rem 1rem;
-}
-.f1 .col-1 #aceptar {
-  margin-bottom: 50px;
-  padding: 1rem 2rem;
-  display: inline-block;
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-  background-color: #114d3b;
-  cursor: pointer;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-.f1 .col-1 #aceptar:hover {
-  background-color: rgb(7.7765957447, 35.2234042553, 26.9893617021);
-  color: #fff;
-}
-.f1 .col-1 #cancelar {
-  margin-bottom: 50px;
-  padding: 1rem 2rem;
-  display: inline-block;
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-  background-color: #781b1b;
-  cursor: pointer;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-.f1 .col-1 #cancelar:hover {
-  background-color: rgb(78.3673469388, 17.6326530612, 17.6326530612);
-  color: #fff;
-}
-
-.table {
-  width: 100%;
-  border-collapse: collapse;
-  /*
-      breakpoints are viewport arbitrary values,
-      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
-      the breakpoints I used were inspired by Bootstrap =>
-      https://getbootstrap.com/docs/5.0/layout/breakpoints/
-  */
-  /*
-      breakpoints are viewport arbitrary values,
-      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
-      the breakpoints I used were inspired by Bootstrap =>
-      https://getbootstrap.com/docs/5.0/layout/breakpoints/
-  */
-  /*
-      breakpoints are viewport arbitrary values,
-      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
-      the breakpoints I used were inspired by Bootstrap =>
-      https://getbootstrap.com/docs/5.0/layout/breakpoints/
-  */
-}
-@media only screen and (max-width: 575.98px) {
-  .table {
-    display: none;
-  }
-}
-@media only screen and (min-width: 575.99px) and (max-width: 767.98px) {
-  .table {
-    display: none;
-  }
-}
-@media only screen and (min-width: 767.99px) and (max-width: 1199.97px) {
-  .table {
-    display: none;
-  }
-}
-.table tr th,
-.table tr td {
-  padding: 10px;
-  border-collapse: collapse;
-  border: 1px solid #000;
-}
-.table thead tr {
-  background-color: #781b1b;
-  color: #fff;
-  text-transform: uppercase;
-}
-.table tbody tr:nth-of-type(even) {
-  background-color: #979797;
-  color: #fff;
-}
-.table tbody tr:nth-of-type(even) a {
-  color: #fff;
-}
-.table tbody tr td {
-  text-align: center;
-}
-
 .table-mobile {
   /*
       breakpoints are viewport arbitrary values,
@@ -639,8 +395,9 @@ body {
 .table-mobile .fila .columna .col-header {
   text-transform: uppercase;
   width: 40%;
-  background-color: #781b1b;
+  background-color: #000;
   color: #fff;
+  font-weight: bold;
 }
 .table-mobile .fila .columna .col-contenido {
   width: 60%;
@@ -653,21 +410,38 @@ body {
   color: #fff;
 }
 
-.btn {
-  padding: 10px 20px;
-  display: inline-block;
-  border: none;
-  border-radius: 0px;
-  color: #fff;
-  background-color: #114d3b;
-  cursor: pointer;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-  margin: 10px 0;
+.table-hidden {
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
 }
-.btn:hover {
-  background-color: rgb(7.7765957447, 35.2234042553, 26.9893617021);
-  color: #fff;
+@media only screen and (max-width: 575.98px) {
+  .table-hidden {
+    display: none;
+  }
+}
+@media only screen and (min-width: 575.99px) and (max-width: 767.98px) {
+  .table-hidden {
+    display: none;
+  }
+}
+@media only screen and (min-width: 767.99px) and (max-width: 1199.97px) {
+  .table-hidden {
+    display: none;
+  }
 }
