@@ -15,7 +15,8 @@
     <!-- Contenido Index -->
     <div class=" container__lista container">
         <h2 class="text-center text-uppercase my-5">Cirugias</h2>
-        <table class="table ">
+        <a href="form-cirugia.html" class="btn btn-success mb-3">Agregar</a>
+        <table class="table table-striped table-hover table-hidden table-bordered text-center">
             <thead>
                 <tr class="table-dark">
                     <th scope="col">ID</th>
@@ -36,7 +37,37 @@
                 </tr>
             </tbody>
         </table>
-        <a href="form-cirugia.html" class="btn btn-success">Agregar</a>
+        <div class="table-mobile">
+            <!-- Inicio de la fila mobile -->
+            <div class="fila">
+                <div class="columna">
+                    <div class="col-header">ID</div>
+                    <div class="col-contenido">001</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">Nombre de la cirugia</div>
+                    <div class="col-contenido">Gastrotomía</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">Precio</div>
+                    <div class="col-contenido">300</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">Detalles</div>
+                    <div class="col-contenido">Cirugia de intestino en perros y gatos</div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">editar</div>
+                    <div class="col-contenido"><a href="form-servicio.html"><i
+                                class="fa-solid fa-pencil pencil"></i></a></div>
+                </div>
+                <div class="columna">
+                    <div class="col-header">Eliminar</div>
+                    <div class="col-contenido"><i class="fa-solid fa-trash trash"></i></div>
+                </div>
+
+            </div>
+            <!-- Fin de la fila mobile -->
     </div>
 </body>
 
