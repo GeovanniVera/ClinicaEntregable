@@ -7,3 +7,132 @@
 @forward 'utilidades';
 @forward 'mixins' ;
 // @use 'base/mixins'
+
+// Variables (ajusta los colores y tamaños según tus preferencias)
+$color-header-bg: #000;
+$color-header-text: #fff;
+$color-footer-bg: #8B0000;
+$color-footer-text: #fff;
+$container-width: 1200px;
+
+// Estilos globales
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+// Encabezado
+.header {
+  background-color: $color-header-bg;
+  color: $color-header-text;
+  padding: 20px 0;
+
+  .container__header {
+    max-width: $container-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__logo {
+    max-width: 100px;
+  }
+
+  .header__titulo {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+
+  .header__nav {
+    display: flex;
+    gap: 15px;
+
+    .header__enlace {
+      color: $color-header-text;
+      text-decoration: none;
+      font-size: 16px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Sección principal
+.pagina-principal {
+  .container__principal {
+    display: flex;
+    gap: 20px;
+    max-width: $container-width;
+    margin: 40px auto;
+    align-items: center;
+
+    .columna__izquierda {
+      flex: 1;
+
+      .principal__titulo {
+        font-size: 32px;
+        color: #333;
+      }
+
+      .principal__parrafo {
+        font-size: 16px;
+        margin: 10px 0;
+      }
+    }
+
+    .columna__derecha {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+
+      .principal__img {
+        max-width: 100%;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+// Pie de página
+.footer {
+  background-color: $color-footer-bg;
+  color: $color-footer-text;
+  padding: 20px 0;
+
+  .container__footer {
+    max-width: $container-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .footer__dir,
+    .footer__social {
+      flex: 1;
+
+      .footer__dir__titulo,
+      .footer__social__titulo {
+        font-size: 18px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      }
+
+      .footer__parrafo,
+      .footer__enlace {
+        font-size: 14px;
+        color: $color-footer-text;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
